@@ -1,0 +1,296 @@
+body{
+    overflow-y: scroll;
+    font-family: "Microsoft YaHei";
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin:0;
+    padding:0;
+}
+fieldset, img {
+    border:0;
+}
+
+abbr, acronym {
+    border:0;
+    font-variant:normal;
+}
+::-ms-clear, ::-ms-reveal{display: none;}
+:focus {
+    outline:0;
+}
+
+address, caption, cite, code, dfn, em, th, var, optgroup {
+    font-style:inherit;
+    font-weight:inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size:100%;
+    font-weight:normal;
+}
+
+abbr, acronym {
+    border:0;
+    font-variant:normal;
+}
+
+input, button, textarea, select, optgroup, option {
+    font-family:inherit;
+    font-size:inherit;
+    font-style:inherit;
+    font-weight:inherit;
+}
+
+input, button, select, textarea {
+    outline:none;
+}
+
+textarea {
+    resize:none;
+}
+
+input, button, textarea, select {
+    *font-size:100%;
+}
+input:-webkit-autofill {
+    /*-webkit-box-shadow: 0 0 0px 1000px white inset;*/
+    /*-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075) ;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075) ;
+    background: white ;*/
+}
+input[type="search"] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+input[type="radio"],
+input[type="checkbox"] {
+    /*margin: 4px 0 0;*/
+    margin-top: 1px \9;
+    line-height: normal;
+    position: relative;
+    top:2px;
+}
+input[type="file"] {
+    display: block;
+}
+input[type="range"] {
+    display: block;
+    width: 100%;
+}
+select[multiple],
+select[size] {
+    height: auto;
+}
+input[type="file"]:focus,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+output {
+    display: block;
+    padding-top: 7px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+}
+ul, ol {
+    list-style:none;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+
+
+
+
+/* css common */
+html,body{
+    height: 100%;
+}
+.redborder{
+    border:red solid 1px;
+}
+
+.none,.mpage>.col-md-2{
+    /*display: none;*/
+}
+.my_class{
+    font-size:14px;
+}
+.mcontainer
+{
+    min-height:100%;
+    height: auto !important;
+    height: 100%;
+    /*IE6不识别min-height*/
+    position: relative;
+}
+.mpage{
+    padding-bottom: 70px;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;/*脚部的高度*/
+    clear:both;
+}
+.clearfix:after {content: "."; display: block; height:0; clear:both; visibility: hidden;}
+.clearfix { *zoom:1; }
+
+/*浮动 start*/
+.float_l{
+    float: left;
+}
+.float_r{
+    float: right;
+}
+.clear_b{
+    clear: both;
+}
+
+/*浮动 end*/
+/*居左右中 start*/
+.align_c{
+    text-align: center;
+}
+.align_l{
+    text-align: left;
+}
+.align_r{
+    text-align: right;
+}
+.margin_lr_c{
+    margin: 0 auto;
+}
+.margin_tb_c{
+    margin: auto 0;
+}
+.margin_c{
+    margin: auto;
+}
+/*居左右中 end*/
+/*长度和宽度 start*/
+.width_100_p{
+    width:100%;
+}
+.height_100_p{
+    height:100%;
+}
+.all_100_p{
+    width:100%;
+    height:100%;
+}
+/*长度和宽度 end*/
+
+/*位置 start*/
+.position_r{
+    position: relative;
+}
+.position_f{
+    position: fixed;
+}
+.position_a{
+    position: absolute;
+}
+/*位置 end*/
+
+/*display start*/
+.display_ilb{
+    display: inline-block;
+}
+.display_n{
+    display:none;
+}
+/*display end*/
+/*圆角 start*/
+.border_radius_5{
+    border-radius:5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius:5px;
+}
+/*圆角 end*/
+
+
+/*字体 start*/
+.font_20{
+    font-size: 20px;
+}
+/*字体 end*/
+
+
+/*a 标签 start*/
+a:hover{
+    text-decoration: none;
+    cursor: pointer;
+    color:#6fabf4;
+}
+/*a 标签 end*/
+/*错误提示 start*/
+/*.error{*/
+/*font-size: 12px;*/
+/*background: url("../server/yg/static/image/login/login_icons.png") 0 -114px no-repeat #f7f7f7;*/
+/*color: #ff6d58;*/
+/*text-align: left;*/
+/*padding-left: 20px;*/
+/*line-height: 20px;*/
+/*left: -90px;*/
+/*}*/
+/*错误提示 end*/
+/*显隐 start*/
+.hidden{
+    /*display: none;*/
+    visibility: hidden;
+}
+
+
+/*main start*/
+body{
+    position: relative;
+    height: 100%;
+}
+.nav{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 100px;
+}
+.nav ul{
+    text-align: left !important;
+
+}
+.main{
+    width:100%;
+    position: relative;
+    height:  calc(100% - 50px)
+
+
+}
+.main .left{
+    width:20%;
+    display: inline-block;
+    height: 100%;
+    vertical-align: bottom;
+}
+.main .coment{
+    width:79%;
+    display: inline-block;
+    height: 100%;
+}
+
+/*main end*/

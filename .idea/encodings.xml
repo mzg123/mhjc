@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
-    <file url="file://$PROJECT_DIR$/cms/yg_cms/dist/js/react-dom.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/cms/yg_cms/dist/js/react.min.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/cms/yg_cms/redux" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/cms/yg_cms/webpack.config.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/common/css/base.css" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dist/js/react-dom.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dist/js/react.min.js" charset="UTF-8" />
@@ -12,7 +8,6 @@
     <file url="file://$PROJECT_DIR$/es6/bundle.js.map" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/es6/es6" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/es6/index.html" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/es6/node_modules" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/es6/package.json" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/es6/react-dom.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/es6/react.min.js" charset="UTF-8" />
