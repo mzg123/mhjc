@@ -1,0 +1,206 @@
+npm install cnpm -g --registry=https://registry.npm.taobao.org
+Gulp自动添加版本号
+推荐使用gulp-rev + gulp-rev-collector是比较方便的方法，结果如下:
+
+"/css/style.css" => "/dist/css/style-1d87bebe.css"
+"/js/script1.js" => "/dist/script1-61e0be79.js"
+"cdn/image.gif"  => "//cdn8.example.dot/img/image-35c3af8134.gif"
+但是由于公司发布系统限制，如果用上面方法实现，每次更新都会积压过多过期无用的文件，我们预期效果是:
+
+"/css/style.css" => "/dist/css/style.css?v=1d87bebe"
+"/js/script1.js" => "/dist/script1.js?v=61e0be79"
+"cdn/image.gif"  => "//cdn8.example.dot/img/image.gif?v=35c3af8134"
+怎么破?改上面两个Gulp插件是最高效的方法了。
+
+安装Gulp
+npm install --save-dev gulp
+
+分别安装gulp-rev、gulp-rev-collerctor
+npm install --save-dev gulp-rev
+npm install --save-dev gulp-rev-collector
+
+打开node_modules\gulp-rev\index.js
+
+第133行 manifest[originalFile] = revisionedFile;
+更新为: manifest[originalFile] = originalFile + '?v=' + file.revHash;
+
+打开node_modules\gulp-rev\node_modules\rev-path\index.js
+
+10行 return filename + '-' + hash + ext;
+更新为: return filename + ext;
+
+打开node_modules\gulp-rev-collector\index.js
+
+31行 if ( path.basename(json[key]).replace(new RegExp( opts.revSuffix ), '' ) !== path.basename(key) ) {
+更新为: if ( path.basename(json[key]).split('?')[0] !== path.basename(key) ) {
+
+配置gulpfile.js, 可参考下面gulpfile.js代码
+
+结果达到预期，如下：
+
+Css
+
+ background: url('../img/one.jpg?v=28bd4f6d18');
+ src: url('/fonts/icomoon.eot?v=921bbb6f59');
+Html
+
+ href="css/main.css?v=885e0e1815"
+ src="js/main.js?v=10ba7be289"
+ src="img/one.jpg?v=28bd4f6d18"
+
+
+
+'use strict';
+var _            = require('underscore');
+var gutil        = require('gulp-util');
+var PluginError  = gutil.PluginError;
+var through      = require('through2');
+var path         = require('path');
+
+var PLUGIN_NAME  = 'gulp-rev-collector';
+
+var defaults = {
+    //revSuffix: '-[0-9a-f]{8,10}-?'
+    revSuffix: '[?v=0-9a-f]*'
+};
+
+function _getManifestData(file, opts) {
+    var data;
+    var ext = path.extname(file.path);
+    if (ext === '.json') {
+        var json = {};
+        try {
+            var content = file.contents.toString('utf8');
+            if (content) {
+                json = JSON.parse(content);
+            }
+        } catch (x) {
+            this.emit('error', new PluginError(PLUGIN_NAME,  x));
+            return;
+        }
+        if (_.isObject(json)) {
+            var isRev = 1;
+            Object.keys(json).forEach(function (key) {
+                //if ( !_.isString(json[key]) || path.basename(json[key]).replace(new RegExp( opts.revSuffix ), '' ) !==  path.basename(key) ) {
+                if ( !_.isString(json[key]) || path.basename(json[key]).split('?')[0] !== path.basename(key) ) {
+                    isRev = 0;
+                }
+            });
+
+            if (isRev) {
+                data = json;
+            }
+        }
+
+    }
+    return data;
+}
+
+function escPathPattern(pattern) {
+    return pattern.replace(/[\-\[\]\{\}\(\)\*\+\?\.\^\$\|\/\\]/g, "\\$&");
+}
+
+function closeDirBySep(dirname) {
+    return dirname + (!dirname || new RegExp( escPathPattern('/') + '$' ).test(dirname) ? '' : '/');
+}
+
+function revCollector(opts) {
+    opts = _.defaults((opts || {}), defaults);
+
+    var manifest  = {};
+    var mutables = [];
+    return through.obj(function (file, enc, cb) {
+        if (!file.isNull()) {
+            var mData = _getManifestData.call(this, file, opts);
+            if (mData) {
+                _.extend( manifest, mData );
+            } else {
+                mutables.push(file);
+            }
+        }
+        cb();
+    }, function (cb) {
+
+        var changes = [];
+        var dirReplacements = [];
+        if ( _.isObject(opts.dirReplacements) ) {
+            Object.keys(opts.dirReplacements).forEach(function (srcDirname) {
+                dirReplacements.push({
+                    dirRX:  escPathPattern( closeDirBySep(srcDirname) ),
+                    dirRpl: opts.dirReplacements[srcDirname]
+                });
+            });
+        }
+
+        if (opts.collectedManifest) {
+            this.push(
+                new gutil.File({
+                    path: opts.collectedManifest,
+                    contents: new Buffer(JSON.stringify(manifest, null, "\t"))
+                })
+            );
+        }
+
+        for (var key in manifest) {
+            var patterns = [ escPathPattern(key) ];
+            if (opts.replaceReved) {
+
+                patterns.push( escPathPattern( (path.dirname(key) === '.' ? '' : closeDirBySep(path.dirname(key)) ) + path.basename(key, path.extname(key)) )
+                            //+ opts.revSuffix
+                            +escPathPattern(path.extname(key))+ opts.revSuffix
+                            //+ escPathPattern( path.extname(key) )
+                        );
+            }
+
+            if ( dirReplacements.length ) {
+
+                dirReplacements.forEach(function (dirRule) {
+                    patterns.forEach(function (pattern) {
+                        changes.push({
+                            regexp: new RegExp(  dirRule.dirRX + pattern, 'g' ),
+                            patternLength: (dirRule.dirRX + pattern).length,
+                            replacement: _.isFunction(dirRule.dirRpl)
+                                            ? dirRule.dirRpl(manifest[key])
+                                            : closeDirBySep(dirRule.dirRpl) + manifest[key]
+                        });
+                    });
+                });
+            } else {
+
+                patterns.forEach(function (pattern) {
+                    // without dirReplacements we must leave asset filenames with prefixes in its original state
+                    changes.push({
+                        regexp: new RegExp( '([\/\\\\\'"])' + pattern, 'g' ),
+                        patternLength: pattern.length,
+                        replacement: '$1' + manifest[key]
+                    });
+                });
+
+            }
+        }
+
+        // Replace longer patterns first
+        // e.g. match `script.js.map` before `script.js`
+        changes.sort(
+            function(a, b) {
+                return -(b.patternLength - a.patternLength);
+            }
+        );
+        mutables.forEach(function (file){
+            if (!file.isNull()) {
+                var src = file.contents.toString('utf8');
+
+                changes.forEach(function (r) {
+                    src = src.replace(r.regexp, r.replacement);
+                });
+                file.contents = new Buffer(src);
+            }
+            this.push(file);
+        }, this);
+
+        cb();
+    });
+}
+
+module.exports = revCollector;
+

@@ -1,0 +1,57 @@
+.roller{
+    /*width:1204px;*/
+    overflow-x: hidden;
+}
+.roller .comtent{
+    width:100%;
+    left:0;
+    transition: left 2s;
+    -moz-transition: left 2s; /* Firefox 4 */
+    -webkit-transition: left 2s; /* Safari 和 Chrome */
+    -o-transition: left 2s; /* Opera */
+}
+.roller .comtent>div,.roller .roller_footer>div{
+    display: inline-block;
+}
+.roller .comtent>div{
+    border:2px solid transparent;
+}
+.roller .comtent .current_item{
+    border:2px solid red;
+}
+.roller .roller_footer .current_item_footer{
+    border-color:red;
+}
+.roller .roller_footer>div{
+    border-radius: 100%;
+    width:10px;
+    height:10px;
+    border:1px #000000 solid;
+    margin-left:5px;
+}
+
+.roller .roller_footer>div:hover,.roller .leftClick:hover,.roller .rightClick:hover{
+    cursor: pointer;
+}
+.roller .roller_footer{
+    bottom: 20px;
+}
+.roller .leftClick{
+background-image: url("http://img6.yingu.com/image/ui_click_scroll_big_left.png");
+    width: 30px;
+    height: 50px;
+}
+.roller .rightClick{
+    background-image: url("http://img6.yingu.com/image/ui_click_scroll_big_right.png");
+    width: 30px;
+    height: 50px;
+}
+.roller .comtent img{
+    max-width: 100%;
+    /*width: 600px;*/
+    width: 1200px;
+}
+
+
+
+

@@ -1,0 +1,6 @@
+@import "../../common/scss/base.scss";
+.tttt{
+  background: red;
+  border:1px solid red;
+  @include round(1.5rem, 1px solid $ipadBtnColor1);
+}

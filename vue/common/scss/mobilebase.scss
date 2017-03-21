@@ -1,0 +1,123 @@
+@import 'base';
+
+body,html{
+  height: 100%;
+}
+.flex_con{
+  display: -moz-box;  /* Firefox */
+  display: -ms-flexbox;    /* IE10 */
+  display: -webkit-box;    /* Safari */
+  display: -webkit-flex;    /* Chrome, WebKit */
+  display: box;
+  display: flexbox;
+  display: flex;
+}
+.flex_dir_r{
+  -webkit-box-orient:horizontal;
+  -moz-box-orient:horizontal;
+  -ms-box-orient:horizontal;
+  -o-box-orient:horizontal;
+  box-orient:horizontal;
+
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  -o-flex-direction: row;
+  flex-direction:row;
+}
+.flex_dir_c{
+  -webkit-box-orient:vertical;
+  -moz-box-orient:vertical;
+  -ms-box-orient:vertical;
+  -o-box-orient:vertical;
+  box-orient:vertical;
+
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction:column;
+}
+.flex_s_c{
+  -webkit-box-pack:center;
+  -moz-box-pack:center;
+  -ms-flex-pack:center;
+  box-pack:center;  //水平
+
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+}
+.flex_s_sb{
+  -webkit-box-pack:justify;
+  -moz-box-pack:justify;
+  -ms-flex-pack:justify;
+  box-pack:space-between;  //水平
+
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+}
+.flex_v_c{
+  -webkit-box-align:center;
+  -moz-box-align:center;
+  -ms-flex-align:center;
+  box-align:center; //垂直
+
+  -webkit-align-items:center;
+  -moz-align-items:center;
+  -ms-align-items:center;
+  -o-align-items:center;
+  align-items:center;
+}
+.flex_s_wrap{
+  -webkit-box-lines:multiple;
+  -moz-box-lines:multiple;
+  -ms-box-lines:multiple;
+  box-lines:multiple;
+
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap:wrap;
+}
+.flex_p_100{
+  -prefix-box-flex: 1; /* old spec webkit, moz */
+  -webkit-box-flex: 1;      /* OLD - iOS 6-, Safari 3.1-6 */
+  -webkit-flex: 1;          /* Chrome */
+  -moz-box-flex: 1;         /* Firefox 19- */
+  -ms-flex: 1;              /* IE 10 */
+  flex: 1;
+}
+
+
+
+
+.m_con_sb{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

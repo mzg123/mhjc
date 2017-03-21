@@ -1,0 +1,18 @@
+.tabs .tab{
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+  padding: 3px 7px;
+  /*border-top: 1px #c0c0c0 solid;*/
+  /*border-left: 1px #c0c0c0 solid;*/
+  /*border-right: 1px #c0c0c0 solid;*/
+  /*border-radius: 5px 5px 0 0;*/
+}
+.tabs .current{
+  border-top: 1px red solid;
+  border-left: 1px red solid;
+  border-right: 1px red solid;
+  border-radius:5px 5px 0 0;
+}

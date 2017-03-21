@@ -1,0 +1,419 @@
+@import 'common';
+
+ [v-cloak] {
+    display: none;
+ }
+.pageMain {
+  width: 100%;
+  padding: pxToRem(0px);
+}
+.bodyBG{
+  background: $ipadBodyBg;
+}
+.dispalyCenter {
+  margin: 0 auto;
+}
+
+.dispalyIlb {
+  display: inline-block;
+}
+
+.alignCenter {
+  text-align: center;
+}
+
+.alignLeft {
+  text-align: left;
+}
+
+.alignRihgt {
+  text-align: right;
+}
+
+.floatL {
+  float: left;
+}
+
+.floatR {
+  float: right;
+}
+
+.marginL3 {
+  margin-left: 3rem;
+}
+.marginR3 {
+  margin-right: 3rem;
+}
+.marginL2 {
+  margin-left: 2rem;
+}
+
+.marginT2 {
+  margin-top: 2rem;
+}
+
+.marginT1 {
+  margin-top: 1rem;
+}
+
+.borderL {
+  border-left: 1px solid #e4e4e4;;
+}
+
+.marginB2 {
+  margin-bottom: 1rem;
+}
+
+.marginT3 {
+  margin-top: 3rem;
+}
+.paddingB2 {
+  padding-bottom: 2rem;
+}
+.paddingL2 {
+  padding-left: 2rem;
+}
+.paddingB3 {
+  padding-bottom: 3rem;
+}
+.paddingB1 {
+  padding-bottom: 1rem;
+}
+.paddingT3 {
+  padding-top: 3rem;
+}
+.paddingT2 {
+  padding-top: 2rem;
+}
+.paddingB1 {
+  padding-bottom: 1rem;
+}
+
+.line90 {
+  border-top: 1px solid #e4e4e4;
+  width: 90%;
+}
+
+.line100 {
+  border-top: 1px solid #000000;
+  width: 100%;
+}
+.bankSelect{
+  position: absolute;
+//  border:blue solid 1px;
+  background: #ffffff;
+  width:100%;
+}
+.bankSelect >div{
+  padding-left: 2rem;
+  cursor: pointer;
+}
+#regForm .emergencyPeople {
+  background: #e4e4e4;
+}
+
+#regForm .regRow > div {
+  width: 45%;
+}
+
+#regForm .regRow .regColL > div, #regForm .regRow .regColR > div {
+  width: 60%;
+}
+
+#regForm .regRow .regColLF > div, #regForm .regRow .regColRF > div {
+  width: 70%;
+}
+
+#regForm .regRow .regColL, #regForm .regRow .regColR {
+  display: inline-block;
+  text-align: right;
+}
+
+#regForm .regRow .regColL span:first-child, #regForm .regRow .regColR span:first-child {
+  color: red;
+}
+
+
+
+#regForm .regRow .fullWidth {
+  width: 100%;
+}
+
+#regForm .regRow input, #regForm .regRow select {
+  @include round(2rem, $border: 1px solid #d0d0d0);
+  padding: 0 1rem;
+}
+#regForm .regRow .regColL span:nth-child(2), #regForm .regRow .regColR span:nth-child(2) {
+  font-size: 0.9rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+
+}
+#regForm .regRow input[type=text],#regForm .regRow input[type=number],#regForm .regRow input[type=date], #regForm .regRow select {
+  appearance: none;
+  -webkit-appearance: none;
+  height:2.5rem;
+  line-height: 2.5rem;
+  font-size: 0.9rem;
+  background: none;
+}
+#regForm .regRow input[type=text], #regForm .regRow select {
+ margin: 0.2rem 0;
+}
+#regForm .regRow input[type=date]{
+
+}
+#regForm .regRow input[type=radio]{
+
+}
+#regForm .regRow input:focus, #regForm .regRow select:focus {
+  @include round(2rem, $border: 1px solid #66ccff);
+  padding: 0 1rem;
+  outline: none
+}
+
+#regForm {
+  margin-top: pxToRem(20px);;
+}
+
+#regForm .regRow {
+  margin-top: pxToRem(10px);;
+}
+
+.positionR {
+  position: relative;
+}
+.positionA {
+  position: absolute;
+}
+[v-cloak] {
+  display: none;
+}
+
+.btnDefault {
+  @include ipadBtn(0.9rem, 11rem, 2.5rem, 2.5rem, $ipadBtnColor2, 1.5rem, $ipadBtnColor1);
+}
+.btnPramary1 {
+  @include ipadBtn(0.9rem, 11rem, 2.5rem, 2.5rem, $ipadBtnColor1, 1.5rem, $ipadBtnColor1);
+}
+.btnPramary {
+  @include ipadBtn(0.9rem, 17rem, 2.5rem, 2.5rem, $ipadBtnColor1, 1.5rem, $ipadBtnColor1);
+}
+
+
+
+.productTitleBG {
+  background: $ipadBtnColor1;
+  color: $ipadBtnColor2;
+}
+
+.width33 {
+  width: 32%;
+}
+
+.width80 {
+  width: 70%;
+}
+
+.width20 {
+  width: 28%;
+}
+
+.width100 {
+  width: 100%;
+}
+
+.bindBG {
+  background: #EEEEEE;
+}
+
+.height80 {
+  height: 80%;
+}
+.titleFontH2{
+  font-size: 1rem;
+}
+.productItemBG {
+  background: #e2e2e4;
+}
+
+.formShow input {
+  border: none !important;
+  background: $ipadBodyBg;
+  pointer-events: none;
+}
+
+
+//产品列表相关样式
+.procListForm {
+  margin-top: pxToRem(10px);
+}
+
+.procListForm ul li {
+  width: 100%;
+  margin-top: pxToRem(12px);
+  clear: both;
+}
+
+.procListForm .procTitle {
+  color: $listTitleColor;
+  padding: pxToRem(5px);
+  padding-left: pxToRem(20px);
+  background: $listTitleBgColor;
+  font-size: pxToRem(16px);;
+}
+
+.procListForm .procContent {
+  padding: pxToRem(8px);
+  padding-left: pxToRem(20px);
+  background: $listContentBgColor;
+  height: pxToRem(105px);
+  font-size: pxToRem(9px);
+}
+
+.procListForm .contentL {
+  width: 70%;
+  float: left;
+  border-right: 1px solid #31333e;
+  padding-right: pxToRem(20px);
+
+}
+
+.procListForm .block1 {
+  width: 40%;
+  display: inline-block;
+  text-align: left;
+}
+
+.procListForm .block2 {
+  width: 25%;
+  display: inline-block;
+  text-align: center;
+}
+
+.procListForm .block3 {
+  width: 25%;
+  display: inline-block;
+  text-align: right;
+}
+
+.procListForm .bigFont {
+  font-size: pxToRem(22px);
+}
+
+.procListForm .amountInput {
+  padding: pxToRem(7px);
+  @include round(1.5rem, 1px solid $ipadBtnColor1);
+  text-align: center;
+  width: 80%;
+  height: pxToRem(33px);
+  background: none;
+}
+.procListForm input{
+  appearance:none;
+  -webkit-appearance: none;
+}
+.procListForm .profit {
+  padding: pxToRem(7px);
+  text-align: center;
+}
+
+.procListForm .buyBtn {
+  width: 80%;
+}
+
+.procListForm .contentLTop {
+  border-bottom: 1px solid #343338;
+  padding: pxToRem(5px) 0px;
+  padding-bottom: pxToRem(10px)
+}
+
+.procListForm .contentLBottom {
+
+  margin-top: pxToRem(10px)
+}
+
+.procListForm .contentR {
+  width: 30%;
+  float: right;
+  text-align: center;
+  padding-left: pxToRem(20px);
+}
+
+/*支付界面CSS*/
+.color-num {
+  color: #dbae37;
+}
+
+#regForm .regRow .regCol > div.width-num,#regForm .regRow .regColL > div.width-num, #regForm .regRow .regColR > div.width-num {
+  text-align: left;
+  width: 90%;
+  letter-spacing: 1px;
+  margin-left: 31%;
+  font-size: 0.9rem;
+}
+
+#regForm .regRow .regCol {
+  text-align: center;
+  width: 90%;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+}
+
+#regForm  .width-num label{
+  margin-left:pxToRem(5px); ;
+}
+#regForm    .lineH3 {
+  height:pxToRem(30px);
+  line-height:pxToRem(30px);
+}
+#regForm    .lineH2 {
+  height:pxToRem(22px);
+  line-height:pxToRem(22px);
+}
+
+.keyPoint{
+  color:$keyPointColor;
+  text-decoration:underline;
+}
+
+label.keyPoint:before {
+    content: '\020';
+}
+label.keyPoint:after{
+   content:"\020";
+}
+
+
+.closeBtn{
+    width: 2rem;
+    height: 2rem;
+    @include round(2rem, $border: 1px solid #d0d0d0);
+    right: -0.6rem;
+    top: -0.8rem;
+    background: $ipadBtnColor1;
+    position: absolute; 
+    transition:transform 1s;
+}
+.closeBtn:hover{
+    transform: rotate(180deg);
+}
+.closeBtn .btnX{
+  width:2px;
+  background:#ffffff;
+  position:absolute;
+  top:0.2rem;
+  bottom:0.3rem;
+}
+.closeBtn .leftX{
+  transform: rotate(45deg);
+  left:0.9rem;
+ }
+.closeBtn .rightX{
+  transform: rotate(-45deg);
+  right:0.9rem;
+ }
+
+.validateError{
+  border:1px solid $ipadBtnColor1 !important;
+}

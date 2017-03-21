@@ -1,0 +1,27 @@
+@import "../../common/scss/base.scss";
+
+.pager {
+  text-align: center;
+  div{
+    display: inline-block;
+    border: 1px solid #ddd;
+    width:20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 3px;
+
+    &.current{
+      background: #0096f4;
+    }
+    &.pre,&.next{
+      width:60px;
+    }
+    &.disable{
+      background: $disableColor;
+      cursor: default;
+      pointer-events: none;
+    }
+  }
+}

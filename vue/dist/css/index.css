@@ -1,0 +1,226 @@
+@charset "UTF-8";
+/*基本元素样式定义
+//@media screen and (min-width:320px){
+//	html{
+//		font-size:67.25% !important;
+//	}
+//}
+//@media screen and (min-width:321px) and (max-width:375px) {
+//	html{
+//		font-size:72.83% !important;
+//	}
+//}
+//@media screen and (min-width:376px) and (max-width:414px){
+//	html{
+//		font-size:80.30% !important;
+//	}
+//}
+//@media screen and (min-width:415px) and (max-width:500px){
+//	html{
+//		font-size:97.30% !important;
+//	}
+//}
+//
+//@media screen and (min-width:501px) and (max-width:600px){
+//	html{
+//		font-size:110.30% !important;
+//	}
+//}
+//
+//@media screen and (min-width:601px) {
+//	html{
+//		font-size:120% !important;
+//	}
+}
+ */
+.example {
+  font-size: 90px;
+  color: green !important;
+  color: #e2e2e4; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  word-break: keep-all;
+  word-wrap: break-word; }
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #fbfbfb inset; }
+
+body, button, input, select, textarea {
+  font-family: "\5FAE\8F6F\96C5\9ED1",Helvetica, STHeiTi, sans-serif; }
+
+body,
+div, dl, dt, dd, ul, ol, li,
+h1, h2, h3, h4, h5, h6, pre, code,
+form, fieldset, legend, input, textarea,
+p, blockquote, th, td, hr, button,
+footer, header, hgroup, menu, nav, section {
+  margin: 0;
+  padding: 0;
+  transition: display 2s; }
+
+header, footer, section, article, aside, nav, hgroup, address, figure, figcaption, menu, details {
+  display: block; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th {
+  text-align: left;
+  font-weight: normal; }
+
+html, body, fieldset, img, iframe, abbr {
+  border: 0; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+i, em {
+  font-style: normal; }
+
+ol, ul, li {
+  list-style: none; }
+
+h1, h2, h3, h4, h5, h6, small {
+  font-size: 100%;
+  font-weight: normal; }
+
+textarea {
+  overflow: auto;
+  resize: none; }
+
+label {
+  cursor: default; }
+
+a, button {
+  cursor: pointer; }
+
+a, a:hover {
+  text-decoration: none;
+  outline: none; }
+
+iframe {
+  display: block; }
+
+input[type="submit"] {
+  border: none;
+  text-align: center; }
+
+button, input, select, textarea {
+  font-size: 100%; }
+
+button[disabled], html input[disabled] {
+  cursor: default; }
+
+input[type="checkbox"], input[type="radio"] {
+  padding: 0;
+  box-sizing: border-box;
+  vertical-align: -2px;
+  margin: 0px 3px 0px 0px;
+  cursor: pointer; }
+
+.inline-block {
+  display: inline-block;
+  *display: inline;
+  zoom: 1; }
+
+#默认占位符颜色
+::-webkit-input-placeholder {
+  color: #a3a3a3; }
+
+:-moz-placeholder {
+  color: #a3a3a3; }
+
+::-moz-placeholder {
+  color: #a3a3a3; }
+
+:-ms-input-placeholder {
+  color: #a3a3a3; }
+
+body {
+  background: #fff;
+  margin: 0px auto;
+  width: 100%; }
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+.clearfix {
+  *zoom: 1; }
+
+/*浮动 start*/
+.float_l {
+  float: left; }
+
+.float_r {
+  float: right; }
+
+/*浮动 end*/
+/*居左右中 start*/
+.align_c {
+  text-align: center; }
+
+.align_l {
+  text-align: left; }
+
+.align_r {
+  text-align: right; }
+
+.margin_lr_c {
+  margin: 0 auto; }
+
+.margin_tb_c {
+  margin: auto 0; }
+
+.margin_c {
+  margin: auto; }
+
+/*居左右中 end*/
+/*长度和宽度 start*/
+.width_100_p {
+  width: 100%; }
+
+.height_100_p {
+  height: 100%; }
+
+.all_100_p {
+  width: 100%;
+  height: 100%; }
+
+/*长度和宽度 end*/
+/*位置 start*/
+.position_r {
+  position: relative; }
+
+.position_f {
+  position: fixed; }
+
+.position_a {
+  position: absolute; }
+
+/*位置 end*/
+/*display start*/
+.display_ilb {
+  display: inline-block; }
+
+.display_n {
+  display: none; }
+
+/*display end*/
+.hidden {
+  /*display: none;*/
+  visibility: hidden; }

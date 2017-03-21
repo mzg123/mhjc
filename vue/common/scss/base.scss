@@ -1,0 +1,50 @@
+$ft1:1rem;//文字12号大小
+$ft2:1.2rem;//文字14号大小
+$bodyColor:#f0efef;//全局body背FV景色
+ 
+$browserDefaultFontSize:100px;//默认字体大小
+$ipadBtnColor1:#cfad54;//圆形按钮北京颜色
+$ipadBtnColor2:#ffffff;//圆形按钮北京颜色（纯白色）
+$listTitleColor:#ffffff;
+$listTitleBgColor:#d0ac54;
+$listContentBgColor:#e2e2e4;
+$ipadBodyBg:#eeeeee;//ipad页面背景颜色
+$keyPointColor:#FF0000;
+$baseFont:宋体;
+
+$disableColor:#F5F5F5;
+
+@function pxToRem($px){
+	@return $px/$browserDefaultFontSize* 1rem;
+}
+@mixin background($w,$h,$url,$opt:center  center no-repeat) {
+  background:url($url) $opt;
+  width:$w;
+  height:$h;
+  line-height: $h;
+background-size:contain;
+}
+
+@mixin border-radius($tl:100%,$tr:100%,$bl:100%,$br:100%){
+  -moz-border-radius-topleft: $tl;
+  -moz-border-radius-topright: $tr;
+  -moz-border-radius-bottomright: $bl;
+  -moz-border-radius-bottomleft: $br;
+  -o-border-radius-topleft:$tl;
+  -o-border-radius-topright:$tr;
+  -o-border-radius-bottomright: $bl;
+  -o-border-radius-bottomleft:$br;
+  -webkit-border-top-left-radius: $tl;
+  -webkit-border-top-right-radius: $tr;
+  -webkit-border-bottom-right-radius:  $bl;
+  -webkit-border-bottom-left-radius: $br;
+  border-top-left-radius: $tl;
+  border-top-right-radius: $tr;
+  border-bottom-right-radius: $bl;
+  border-bottom-left-radius: $br
+}
+
+
+
+
+

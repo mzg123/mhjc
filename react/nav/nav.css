@@ -1,0 +1,22 @@
+.nav >ul> li{
+  display:inline-block;
+  margin: 5px;
+  position: relative;
+}
+.nav ul{
+  z-index: 19;
+}
+.nav>ul{
+  height: 30px;
+  text-align: center;
+}
+.nav >ul> li>ul{
+  text-align: left;
+  background-color: #ffffff;
+}
+.nav .enter{
+ visibility: visible;
+}
+.nav .leave{
+  visibility: hidden;
+}

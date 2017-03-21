@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+<div id="app">
+    <div class="container">
+        <simple-grid :data-list="gridData" :columns="gridColumns">
+        </simple-grid>
+    </div>
+</div>
+
+<template id="grid-template">
+    <table>
+        <thead>
+        <tr>
+            <th v-for="col in columns">
+                {{ col | capitalize}}
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr v-for="(index,entry) in dataList">
+            <td v-for="col in columns">
+                {{entry[col]}}
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</template>
+
+<script src="http://211.149.193.19:8090/vue-tutorials/03.Ajax/vue-resource/js/vue.js"></script>
+<script src="http://211.149.193.19:8090/vue-tutorials/03.Ajax/vue-resource/js/vue-resource.js"></script>
+<script>
+    Vue.component('simple-grid', {
+        template: '#grid-template',
+        props: ['dataList', 'columns']
+    })
+</script>
+<script>
+
+
+
+
+    var demo = new Vue({
+        el: '#app',
+        data: {
+            gridColumns: ['customerId', 'companyName', 'contactName', 'phone'],
+            gridData: [],
+            apiUrl: 'http://211.149.193.19:8080/api/customers'
+        },
+        ready: function() {
+            this.getCustomers()
+        },
+        methods: {
+            getCustomers: function() {
+
+//                this.$http.jsonp("https://10.0.130.72:7443/u/productSettled?planType='30'&startDate='2016-11-22'&endDate='2017-02-22'&creditStatus='cyz'&page=1")
+//                        .then(function(response) {
+//                            console.log(response);
+//                        })
+//                        .catch(function(response) {
+//                            console.log(response)
+//                        })
+
+                this.$http.jsonp("http://echarts.baidu.com/gallery/vendors/echarts/map/js/china.js")
+                        .then(function(response){
+                            console.log(response,99999)
+                        })
+                        .catch(function(response) {
+                            console.log(response)
+                        })
+            }
+        }
+    })
+</script>
+</body>
+
+</html>

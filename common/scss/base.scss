@@ -1,0 +1,59 @@
+$ft1:1rem;//文字12号大小
+$ft2:1.2rem;//文字14号大小
+$bodyColor:#f0efef;//全局body背FV景色
+ 
+$browserDefaultFontSize:12px;//默认字体大小
+$ipadBtnColor1:#cfad54;//圆形按钮北京颜色
+$ipadBtnColor2:#ffffff;//圆形按钮北京颜色（纯白色）
+$listTitleColor:#ffffff;
+$listTitleBgColor:#d0ac54;
+$listContentBgColor:#e2e2e4;
+$ipadBodyBg:#eeeeee;//ipad页面背景颜色
+$keyPointColor:#FF0000;
+$baseFont:宋体;
+
+
+
+$disableColor:#F5F5F5;
+@function pxToRem($px){
+	@return $px/$browserDefaultFontSize* 1rem;
+}
+
+@mixin round($size:0.8rem,$border:1px solid #0fa1d6) {
+    border: $border;
+    -moz-border-radius: $size;      /* Gecko browsers */
+    -webkit-border-radius: $size;   /* Webkit browsers */
+    border-radius:$size;            /* W3C syntax */
+}
+
+@mixin btn($w:100%,$fColor:$btnFontColor){
+	display:block;
+	width:$w;
+	padding:10px;
+	text-align:center;
+	font-size:1.5rem;
+	color:$fColor;
+	background:$btnBgColor;
+	@include round($border:0px solid #0fa1d6);
+}
+
+@mixin ipadBtn($fs,$w,$h,$lh,$bg,$br,$brc,$fColor:#000000){
+  width:$w;
+  height:$h;
+  line-height:$lh;
+  background: $bg;
+  font-size: $fs;
+  @include round($br,$border:1px solid $brc);
+}
+
+@mixin absoluteFun(){
+	position:absolute;
+	top:0px;
+	left:0px;
+	right:0px;
+	bottom:0px;
+}
+
+
+
+

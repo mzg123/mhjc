@@ -45,3 +45,9 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+/node_modules
+/es6/node_modules
+/vue/node_modules
+/cms/yg_cms/node_modules
+/vue/demo/node_modules
