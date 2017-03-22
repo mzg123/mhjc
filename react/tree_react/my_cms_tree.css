@@ -23,6 +23,7 @@ body,#con,.con{
     /*float: left;*/
     height: 100%;
     background: #808080;
+    overflow-y: scroll;
 }
 #content{
     width: 78%;

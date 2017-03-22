@@ -47,6 +47,7 @@ module.exports = {
     },
     externals: {
         'react': 'React'
+        ,'fs':'fs'
         ,'ReactDOM':'react-dom'
         //,'fs':'fs'
     },

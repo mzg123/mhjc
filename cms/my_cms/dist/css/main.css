@@ -1,5 +1,6 @@
 body{
     overflow-y: scroll;
+    overflow-x: hidden;
     font-family: "Microsoft YaHei";
 }
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -285,12 +286,15 @@ body{
     width:20%;
     display: inline-block;
     height: 100%;
-    vertical-align: bottom;
+    vertical-align: top;
 }
 .main .coment{
     width:79%;
     display: inline-block;
     height: 100%;
 }
-
+#container{
+    height: 100%;
+    overflow-y: hidden;
+}
 /*main end*/

@@ -1,13 +1,32 @@
-var tabcontent1 = require('../data/tabcontent1.json');
-var tabcontent2 = require('../data/tabcontent2.json');
+//var tabcontent1 = require('../data/tabcontent1.json');
+//var tabcontent2 = require('../data/tabcontent2.json');
 //var tabcontent3 = require('../data/tabcontent3.json');
 //var tabcontent4 = require('../data/tabcontent4.json');
 
-
-
 module.exports={
+    getFileInfo:function(){
+        return function (dispatch){
+            $.ajax({
+                type: "get",
+                url: "http://10.0.130.129:3000/getFileTree",
+                data: {},
+                dataType: "json",
+                success: function (data) {
+
+                    dispatch({type:"getFileInfo",treeItems:[data]});
+                },
+                exception: function (data) {
+                    alert("error");
+                    console.log(data);
+                }
+
+            });
+
+        }
+    },
     getAjaxLog:function(subreddit) {
         return function (dispatch) {
+
             dispatch({ type: "getdata"
                        ,param:subreddit
             })
@@ -41,29 +60,30 @@ module.exports={
     ,loadData:function(option){
         return function (dispatch) {
 
-            tabcontent2.body.data= [
-                {"xh":3,"cjr":"cjr","cjje":"10,000.00","jrsj":"2016-12-29 08:49:45","zt":"成功"}
-                , {"xh":3,"cjr":"cjr","cjje":"10,000.00","jrsj":"2016-12-29 08:49:45","zt":"成功1"}
-                , {"xh":3,"cjr":"cjr","cjje":"10,000.00","jrsj":"2016-12-29 08:49:45","zt":"成功2"}
-                , {"xh":3,"cjr":"cjr","cjje":"10,000.00","jrsj":"2016-12-29 08:49:45","zt":"成功3"}
-                , {"xh":3,"cjr":"cjr","cjje":"10,000.00","jrsj":"2016-12-29 08:49:45","zt":"成功4"}
-                , {"xh":3,"cjr":"cjr","cjje":"10,000.00","jrsj":"2016-12-29 08:49:45","zt":"成功5"}
-                , {"xh":3,"cjr":"cjr","cjje":"10,000.00","jrsj":"2016-12-29 08:49:45","zt":"成功6"}
-                , {"xh":3,"cjr":"cjr","cjje":"10,000.00","jrsj":"2016-12-29 08:49:45","zt":"成功7"}
-                , {"xh":3,"cjr":"cjr","cjje":"10,000.00","jrsj":"2016-12-29 08:49:45","zt":"成功8"}
-                , {"xh":3,"cjr":"cjr","cjje":"10,000.00","jrsj":"2016-12-29 08:49:45","zt":"成功9"}
-                , {"xh":3,"cjr":"cjr","cjje":"10,000.00","jrsj":"2016-12-29 08:49:45","zt":"成功10"}
-                , {"xh":3,"cjr":"cjr","cjje":"10,000.00","jrsj":"2016-12-29 08:49:45","zt":"成功11"}
-                , {"xh":3,"cjr":"cjr","cjje":"10,000.00","jrsj":"2016-12-29 08:49:45","zt":"成功12"}
-                , {"xh":3,"cjr":"cjr","cjje":"10,000.00","jrsj":"2016-12-29 08:49:45","zt":"成功13"}
-                , {"xh":3,"cjr":"cjr","cjje":"10,000.00","jrsj":"2016-12-29 08:49:45","zt":"成功14"}
-                , {"xh":3,"cjr":"cjr","cjje":"10,000.00","jrsj":"2016-12-29 08:49:45","zt":"成功15"}
+            //tabcontent2.body.data= [
+            //    {"xh":3,"cjr":"cjr","cjje":"10,000.00","jrsj":"2016-12-29 08:49:45","zt":"成功"}
+            //    , {"xh":3,"cjr":"cjr","cjje":"10,000.00","jrsj":"2016-12-29 08:49:45","zt":"成功1"}
+            //    , {"xh":3,"cjr":"cjr","cjje":"10,000.00","jrsj":"2016-12-29 08:49:45","zt":"成功2"}
+            //    , {"xh":3,"cjr":"cjr","cjje":"10,000.00","jrsj":"2016-12-29 08:49:45","zt":"成功3"}
+            //    , {"xh":3,"cjr":"cjr","cjje":"10,000.00","jrsj":"2016-12-29 08:49:45","zt":"成功4"}
+            //    , {"xh":3,"cjr":"cjr","cjje":"10,000.00","jrsj":"2016-12-29 08:49:45","zt":"成功5"}
+            //    , {"xh":3,"cjr":"cjr","cjje":"10,000.00","jrsj":"2016-12-29 08:49:45","zt":"成功6"}
+            //    , {"xh":3,"cjr":"cjr","cjje":"10,000.00","jrsj":"2016-12-29 08:49:45","zt":"成功7"}
+            //    , {"xh":3,"cjr":"cjr","cjje":"10,000.00","jrsj":"2016-12-29 08:49:45","zt":"成功8"}
+            //    , {"xh":3,"cjr":"cjr","cjje":"10,000.00","jrsj":"2016-12-29 08:49:45","zt":"成功9"}
+            //    , {"xh":3,"cjr":"cjr","cjje":"10,000.00","jrsj":"2016-12-29 08:49:45","zt":"成功10"}
+            //    , {"xh":3,"cjr":"cjr","cjje":"10,000.00","jrsj":"2016-12-29 08:49:45","zt":"成功11"}
+            //    , {"xh":3,"cjr":"cjr","cjje":"10,000.00","jrsj":"2016-12-29 08:49:45","zt":"成功12"}
+            //    , {"xh":3,"cjr":"cjr","cjje":"10,000.00","jrsj":"2016-12-29 08:49:45","zt":"成功13"}
+            //    , {"xh":3,"cjr":"cjr","cjje":"10,000.00","jrsj":"2016-12-29 08:49:45","zt":"成功14"}
+            //    , {"xh":3,"cjr":"cjr","cjje":"10,000.00","jrsj":"2016-12-29 08:49:45","zt":"成功15"}
+            //
+            //].slice(0,option.page);
+            //
+            //tabcontent2.pager.currentPage=option.page;
+            //dispatch({ type: option.type,data:tabcontent2
+            //});
 
-            ].slice(0,option.page);
-
-            tabcontent2.pager.currentPage=option.page;
-            dispatch({ type: option.type,data:tabcontent2
-            });
             //setInterval(function(){
             //    console.log(option);
             //

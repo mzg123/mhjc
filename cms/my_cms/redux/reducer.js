@@ -1,13 +1,11 @@
-var config=require('../config/my_cms.js');
-var getFileTree=require("../server/fileServer").getFileTree;
 var inits=function initState(){
-var tree=getFileTree({text:"static",path:config.staticPath});
+
     return {
         state:1,
         content:{},
         currenttxt:"",
         treeItems:[
-            tree
+
         ]
         ,options:{
         }
@@ -46,11 +44,17 @@ module.exports={
     state||(state=inits());
 
         switch (action.type) {
+            case "getFileInfo":
+
+                state.treeItems=action.treeItems;
+                return deepCopy(state);
+            //return $.extend({},state);
             case "loadding":
                 state.state=0;
                 return deepCopy(state);
                 //return $.extend({},state);
             case "getdata":
+                alert(2);
                 state.content[action.param]? state.content[action.param]= action.data+"\n\n"+state.content[action.param]: state.content[action.param]=action.data;
                 state.content.currentcontent=state.content[action.param];
                 state.currenttxt=state.content[action.param];

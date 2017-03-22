@@ -3,7 +3,7 @@ var reactRedux = require('react-redux')
 require("./my_cms_tree.css");
 require("./test.scss");
 var Redux=require("redux");
-var actions=require("../redux/actions.js");
+var actions=require("../../cms/my_cms/redux/actions.js");
 var reactRouter=require('react-router');
 //import reactRouter from 'react-router';
 //import { Link } from 'react-router';
@@ -27,6 +27,7 @@ var connect=reactRedux.connect,provider =reactRedux.Provider,Link=reactRouter.Li
 
 var TreeItem=React.createClass({
     componentDidMount:function(e){
+        alert("finish");
     },
 
     render:function(){
@@ -67,11 +68,13 @@ var Tree = React.createClass({
     createTree:function(data,itemClick){
         var treeEntity=this.treeEntity,r='', self=this.createTree;
         return data.map(function(item,index){
+
+            var lic="position_r item closed ";//+item.text;
             if(item.child){
-                var lic="position_r item expand "+item.text;
+
                 return(<li className={lic} >
                     <a  onClick= {itemClick.bind(this)} >{item.text}</a>
-                    <ul  className="items position_r">
+                    <ul  className="items position_r "  style={{display:'none'}}>
                  {self(item.child,itemClick)}
                     </ul>
                 </li>)
@@ -84,7 +87,9 @@ var Tree = React.createClass({
         })
     },
     itemClick:function(e){
-        var ul=$(e.target).parent().find("ul");
+        //var ul=$(e.target).parent().find("ul");
+        var ul=$(e.target).parent().children("ul");
+
         if( ul.children().length>0){
             ul.toggle(100);
             var t=ul.parent();
@@ -95,7 +100,8 @@ var Tree = React.createClass({
 
     },
     componentDidMount() {
-        console.log( this.props.route);
+    this.props.getFileInfo();
+
         //this.props.router.setRouteLeaveHook(
         //    this.props.route,
         //    this.routerWillLeave
@@ -115,7 +121,7 @@ var Tree = React.createClass({
         return (
             <div  id="treeCon">
 
-                <div  id="tree">
+                <div  id="tree" >
                     <div className="tree position_r" >
                         <ul className="items position_r">
                     {treehtml}
@@ -145,6 +151,9 @@ const mapDispatchToProps = function(dispatch ,ownProps) {
     return {
         onItemClick: function(id){
             dispatch(actions.getAjaxLog(id));
+        }
+        ,getFileInfo:function(){
+            dispatch(actions.getFileInfo());
         }
     }
 }
