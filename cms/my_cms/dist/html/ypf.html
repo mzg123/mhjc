@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ypf</title>
+    <link rel='stylesheet' href='main.css' />
+
+    <style>
+
+    </style>
+</head>
+<body>
+<div class="nav">
+
+</div>
+<div class="main">
+    <div id="left"   class="left">
+        <ul class="items position_r">
+            <li  class="position_r item "><a murl="http://www.baidu.com">static</a></li>
+            <li  class="position_r item "><a murl="http://www.jb51.net">333333</a></li>
+            <li  class="position_r item "><a murl="http://www.jb51.net">static</a></li>
+            <li  class="position_r item "><a murl="http://www.baidu.com">static</a></li>
+            <li  class="position_r item "><a murl="http://www.baidu.com">static</a></li>
+
+        </ul>
+    </div>
+    <div id="coment"  class="coment">
+         <iframe src="http://www.baidu.com" id="iframe">
+
+         </iframe>
+
+
+    </div>
+</div>
+
+
+<script  type="text/javascript" src="http://ob4uot9cp.bkt.clouddn.com/lib.js"></script>
+
+<!-- 实例化编辑器 -->
+<script type="text/javascript">
+ $("#left").on("click",function(e){
+     $("#iframe").attr("src",$(e.target).attr("murl"))
+
+ })
+</script>
+</body>
+</html>

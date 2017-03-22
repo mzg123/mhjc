@@ -54,7 +54,7 @@ module.exports={
                 return deepCopy(state);
                 //return $.extend({},state);
             case "getdata":
-                alert(2);
+
                 state.content[action.param]? state.content[action.param]= action.data+"\n\n"+state.content[action.param]: state.content[action.param]=action.data;
                 state.content.currentcontent=state.content[action.param];
                 state.currenttxt=state.content[action.param];

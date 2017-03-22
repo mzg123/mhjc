@@ -150,7 +150,12 @@ const mapStateToProps =function (state) {
 const mapDispatchToProps = function(dispatch ,ownProps) {
     return {
         onItemClick: function(id){
-            dispatch(actions.getAjaxLog(id));
+            alert(id);
+            //dispatch(actions.getAjaxLog(id));
+            dispatch({ type: "getdata"
+                ,param:id
+                ,data:new Date().getSeconds()
+            });
         }
         ,getFileInfo:function(){
             dispatch(actions.getFileInfo());
