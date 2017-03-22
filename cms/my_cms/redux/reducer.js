@@ -1,43 +1,13 @@
-
+var config=require('../config/my_cms.js');
+var getFileTree=require("../server/fileServer").getFileTree;
 var inits=function initState(){
-
+var tree=getFileTree({text:"static",path:config.staticPath});
     return {
         state:1,
         content:{},
         currenttxt:"",
         treeItems:[
-            {
-                text:"1第一级"
-
-                ,child:[
-                {
-                    text:"1-1第二级"
-                    ,child:[
-                    {
-                        text:"1-1-1第三级"
-                        ,child:[
-                        {text:"1-1-1-1第四级"}
-                        ,{text:"1-1-1-2第四级"}
-                    ]
-                    },
-                    {
-                        text:"1-1-2第三级"
-                    }
-                ]
-                },
-                {
-                    text:"1-2第二级",
-                    child:[
-                        {
-                            text:"1-2-1第三级"
-                        }
-                        ,{
-                            text:"1-2-2第三级"
-                        }
-                    ]
-                }
-            ]
-            }
+            tree
         ]
         ,options:{
         }

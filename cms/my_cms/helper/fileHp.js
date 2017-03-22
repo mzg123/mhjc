@@ -23,12 +23,12 @@ function _readFile(path,filesList,targetObj)
             var item ;
             if(targetObj["children"])
             {
-                item = {name:file,children:[]};
+                item = {text:file,children:[]};
                 targetObj["children"].push(item);
             }
             else
             {
-                item = {name:file,children:[]};
+                item = {text:file,children:[]};
                 filesList.push(item);
             }
             _readFile(path+'/'+file,filesList,item);
@@ -42,12 +42,12 @@ function _readFile(path,filesList,targetObj)
             obj.path = path+'/'+file; //文件绝对路径
             if(targetObj["children"])
             {
-                var item = {name:file,value:obj.path}
+                var item = {text:file,value:obj.path}
                 targetObj["children"].push(item);
             }
             else
             {
-                var item = {name:file,value:obj.path};
+                var item = {text:file,value:obj.path};
                 filesList.push(item);
             }
         }

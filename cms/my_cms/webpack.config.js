@@ -12,7 +12,7 @@ module.exports = {
         //login: "./webpackbuildjs/mzg/login.js"
         //,modal: "./webpackbuildjs/mzg/modal.js"
         //roller: "./webpackbuildjs/mzg/roller.js"
-        tree: "./webpackreact/tree_react.js"
+        tree: "./webpackreact/cms_react.js"
         //,canvas: "./webpackbuildjs/mzg/canvas.js"
         //,datepicker: "./webpackbuildjs/mzg/datepicker.js"
         //,formselect: "./webpackbuildjs/mzg/formselect.js"
