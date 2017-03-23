@@ -295,6 +295,10 @@ body{
 }
 #container{
     height: 100%;
-    /*overflow-y: hidden;*/
+    overflow-y: auto;
+}
+.CodeMirror{
+    height: 100% !important;
+    border: 1px solid bisque;
 }
 /*main end*/

@@ -2,90 +2,142 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5736c30a-62bb-4f8b-9f9d-ace8984654b1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/snapscreen/UEditorSnapscreen.exe" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/webuploader/Uploader.swf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/zeroclipboard/ZeroClipboard.swf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/video-js/video-js.swf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/video-js/font/vjs.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/video-js/font/vjs.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/video-js/font/vjs.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/html/1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/zeroclipboard/ZeroClipboard.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/zeroclipboard/ZeroClipboard.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/highcharts/modules/annotations.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/highcharts/modules/annotations.src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/highcharts/modules/canvas-tools.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/highcharts/modules/canvas-tools.src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/codemirror/codemirror.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/codemirror/codemirror.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/highcharts/themes/dark-blue.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/highcharts/themes/dark-green.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/highcharts/modules/data.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/highcharts/modules/data.src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/highcharts/modules/drilldown.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/highcharts/modules/drilldown.src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/highcharts/modules/exporting.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/highcharts/modules/exporting.src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/highcharts/modules/funnel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/highcharts/modules/funnel.src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/highcharts/themes/gray.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/highcharts/themes/grid.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/highcharts/modules/heatmap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/highcharts/modules/heatmap.src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/highcharts/highcharts-more.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/highcharts/highcharts-more.src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/highcharts/highcharts.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/highcharts/highcharts.src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/jquery-1.10.2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/jquery-1.10.2.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/jquery-1.10.2.min.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/highcharts/modules/map.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/highcharts/modules/map.src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/highcharts/adapters/mootools-adapter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/highcharts/adapters/mootools-adapter.src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/highcharts/modules/no-data-to-display.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/highcharts/modules/no-data-to-display.src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/highcharts/adapters/prototype-adapter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/highcharts/adapters/prototype-adapter.src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/SyntaxHighlighter/shCore.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/SyntaxHighlighter/shCoreDefault.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/highcharts/themes/skies.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/highcharts/adapters/standalone-framework.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/highcharts/adapters/standalone-framework.src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/video-js/video-js.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/video-js/video-js.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/video-js/video.dev.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/video-js/video.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/video-js/font/vjs.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/webuploader/webuploader.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/webuploader/webuploader.custom.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/webuploader/webuploader.custom.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/webuploader/webuploader.flashonly.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/webuploader/webuploader.flashonly.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/webuploader/webuploader.html5only.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/webuploader/webuploader.html5only.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/webuploader/webuploader.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/webuploader/webuploader.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/webuploader/webuploader.withoutimage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/webuploader/webuploader.withoutimage.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/third-party/xss.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cms/my_cms/info/注意事项" />
-      <change type="MOVED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\routes\getFileTree.js" afterPath="$PROJECT_DIR$/cms/my_cms/routes/file.js" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\lang\en\en.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\lang\en\images\addimage.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\lang\en\images\alldeletebtnhoverskin.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\lang\en\images\alldeletebtnupskin.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\lang\en\images\background.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\lang\en\images\button.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\lang\en\images\copy.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\lang\en\images\deletedisable.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\lang\en\images\deleteenable.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\lang\en\images\listbackground.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\lang\en\images\localimage.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\lang\en\images\music.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\lang\en\images\rotateleftdisable.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\lang\en\images\rotateleftenable.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\lang\en\images\rotaterightdisable.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\lang\en\images\rotaterightenable.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\lang\en\images\upload.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\lang\zh-cn\images\copy.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\lang\zh-cn\images\localimage.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\lang\zh-cn\images\music.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\lang\zh-cn\images\upload.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\lang\zh-cn\zh-cn.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\themes\default\css\ueditor.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\themes\default\css\ueditor.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\themes\default\dialogbase.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\themes\default\images\anchor.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\themes\default\images\arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\themes\default\images\arrow_down.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\themes\default\images\arrow_up.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\themes\default\images\button-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\themes\default\images\cancelbutton.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\themes\default\images\charts.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\themes\default\images\cursor_h.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\themes\default\images\cursor_h.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\themes\default\images\cursor_v.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\themes\default\images\cursor_v.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\themes\default\images\dialog-title-bg.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\themes\default\images\filescan.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\themes\default\images\highlighted.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\themes\default\images\icons-all.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\themes\default\images\icons.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\themes\default\images\icons.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\themes\default\images\loaderror.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\themes\default\images\loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\themes\default\images\lock.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\themes\default\images\neweditor-tab-bg.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\themes\default\images\pagebreak.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\themes\default\images\scale.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\themes\default\images\sortable.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\themes\default\images\spacer.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\themes\default\images\sparator_v.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\themes\default\images\table-cell-align.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\themes\default\images\tangram-colorpicker.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\themes\default\images\toolbar_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\themes\default\images\unhighlighted.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\themes\default\images\upload.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\themes\default\images\videologo.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\themes\default\images\word.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\themes\default\images\wordpaste.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\themes\iframe.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\SyntaxHighlighter\shCore.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\SyntaxHighlighter\shCoreDefault.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\codemirror\codemirror.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\codemirror\codemirror.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\highcharts\adapters\mootools-adapter.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\highcharts\adapters\mootools-adapter.src.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\highcharts\adapters\prototype-adapter.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\highcharts\adapters\prototype-adapter.src.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\highcharts\adapters\standalone-framework.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\highcharts\adapters\standalone-framework.src.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\highcharts\highcharts-more.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\highcharts\highcharts-more.src.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\highcharts\highcharts.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\highcharts\highcharts.src.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\highcharts\modules\annotations.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\highcharts\modules\annotations.src.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\highcharts\modules\canvas-tools.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\highcharts\modules\canvas-tools.src.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\highcharts\modules\data.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\highcharts\modules\data.src.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\highcharts\modules\drilldown.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\highcharts\modules\drilldown.src.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\highcharts\modules\exporting.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\highcharts\modules\exporting.src.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\highcharts\modules\funnel.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\highcharts\modules\funnel.src.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\highcharts\modules\heatmap.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\highcharts\modules\heatmap.src.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\highcharts\modules\map.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\highcharts\modules\map.src.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\highcharts\modules\no-data-to-display.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\highcharts\modules\no-data-to-display.src.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\highcharts\themes\dark-blue.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\highcharts\themes\dark-green.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\highcharts\themes\gray.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\highcharts\themes\grid.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\highcharts\themes\skies.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\jquery-1.10.2.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\jquery-1.10.2.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\jquery-1.10.2.min.map" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\snapscreen\UEditorSnapscreen.exe" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\video-js\font\vjs.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\video-js\font\vjs.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\video-js\font\vjs.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\video-js\font\vjs.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\video-js\video-js.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\video-js\video-js.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\video-js\video-js.swf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\video-js\video.dev.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\video-js\video.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\webuploader\Uploader.swf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\webuploader\webuploader.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\webuploader\webuploader.custom.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\webuploader\webuploader.custom.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\webuploader\webuploader.flashonly.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\webuploader\webuploader.flashonly.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\webuploader\webuploader.html5only.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\webuploader\webuploader.html5only.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\webuploader\webuploader.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\webuploader\webuploader.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\webuploader\webuploader.withoutimage.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\webuploader\webuploader.withoutimage.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\xss.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\zeroclipboard\ZeroClipboard.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\zeroclipboard\ZeroClipboard.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\third-party\zeroclipboard\ZeroClipboard.swf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\ueditor.all.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\ueditor.all.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\ueditor.config.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\ueditor.parse.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor\ueditor.parse.min.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms/my_cms/redux/actions.js" afterPath="$PROJECT_DIR$/cms/my_cms/redux/actions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms/my_cms/app.js" afterPath="$PROJECT_DIR$/cms/my_cms/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms/my_cms/helper/fileHp.js" afterPath="$PROJECT_DIR$/cms/my_cms/helper/fileHp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms/my_cms/server/fileServer.js" afterPath="$PROJECT_DIR$/cms/my_cms/server/fileServer.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms/my_cms/views/index.ejs" afterPath="$PROJECT_DIR$/cms/my_cms/views/index.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms/my_cms/dist/html/index.html" afterPath="$PROJECT_DIR$/cms/my_cms/dist/html/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms/my_cms/dist/css/main.css" afterPath="$PROJECT_DIR$/cms/my_cms/dist/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms/my_cms/config/my_cms.js" afterPath="$PROJECT_DIR$/cms/my_cms/config/my_cms.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/react/tree_react/my_cms_tree.js" afterPath="$PROJECT_DIR$/react/tree_react/my_cms_tree.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms/my_cms/redux/reducer.js" afterPath="$PROJECT_DIR$/cms/my_cms/redux/reducer.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms/my_cms/dist/js/tree.js" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/tree.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/ueditor.all.js" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/ueditor.all.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/ueditor.config.js" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/ueditor.config.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms/my_cms/dist/html/ypf.html" afterPath="$PROJECT_DIR$/cms/my_cms/dist/html/ypf.html" />
     </list>
     <ignored path="hjc.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -132,21 +184,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cms/my_cms/dist/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="5195" max-vertical-offset="5833">
-              <caret line="298" column="1" selection-start-line="298" selection-start-column="1" selection-end-line="298" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.87722135" vertical-offset="5195" max-vertical-offset="5909">
+              <caret line="301" column="29" selection-start-line="301" selection-start-column="29" selection-end-line="301" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="actions.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="actions.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cms/my_cms/redux/actions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5218094" vertical-offset="266" max-vertical-offset="2622">
-              <caret line="31" column="43" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="247" max-vertical-offset="2641">
+              <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -167,8 +219,8 @@
       <file leaf-file-name="index.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cms/my_cms/views/index.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.0" vertical-offset="166" max-vertical-offset="1007">
-              <caret line="14" column="108" selection-start-line="14" selection-start-column="108" selection-end-line="14" selection-end-column="108" />
+            <state vertical-scroll-proportion="-19.76" vertical-offset="209" max-vertical-offset="912">
+              <caret line="37" column="21" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -199,41 +251,6 @@
                 <marker date="1490246096801" expanded="true" signature="1311:1398" placeholder="..." />
                 <marker date="1490246096801" expanded="true" signature="1321:1391" placeholder="{...}" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ueditor.all.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/ueditor.all.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.266667" vertical-offset="32009" max-vertical-offset="559968">
-              <caret line="1693" column="19" selection-start-line="1693" selection-start-column="15" selection-end-line="1693" selection-end-column="19" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <marker date="1490247419540" expanded="true" signature="358839:358856" placeholder="..." />
-                <marker date="1490247419540" expanded="true" signature="363472:363490" placeholder="..." />
-                <marker date="1490247419540" expanded="true" signature="457330:457356" placeholder="..." />
-                <marker date="1490247419540" expanded="true" signature="873405:873423" placeholder="..." />
-                <marker date="1490247419540" expanded="true" signature="890647:890719" placeholder="..." />
-                <marker date="1490247419540" expanded="true" signature="900610:900636" placeholder="..." />
-                <marker date="1490247419540" expanded="true" signature="900832:900923" placeholder="..." />
-                <marker date="1490247419540" expanded="true" signature="901180:901255" placeholder="..." />
-                <marker date="1490247419540" expanded="true" signature="901442:901457" placeholder="..." />
-                <marker date="1490247419540" expanded="true" signature="977949:978021" placeholder="..." />
-                <marker date="1490247419540" expanded="true" signature="1029044:1029055" placeholder="..." />
-                <marker date="1490247419540" expanded="true" signature="1032992:1033005" placeholder="..." />
-                <marker date="1490247419540" expanded="true" signature="1033382:1033418" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ueditor.config.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/ueditor.config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2166" max-vertical-offset="7999">
-              <caret line="114" column="24" selection-start-line="114" selection-start-column="24" selection-end-line="114" selection-end-column="24" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -289,14 +306,14 @@
         <option value="$PROJECT_DIR$/cms/my_cms/routes/file.js" />
         <option value="$PROJECT_DIR$/cms/my_cms/redux/reducer.js" />
         <option value="$PROJECT_DIR$/react/tree_react/my_cms_tree.js" />
-        <option value="$PROJECT_DIR$/cms/my_cms/dist/css/main.css" />
         <option value="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/ueditor.config.js" />
         <option value="$PROJECT_DIR$/cms/my_cms/dist/html/index.html" />
-        <option value="$PROJECT_DIR$/cms/my_cms/views/index.ejs" />
         <option value="$PROJECT_DIR$/cms/my_cms/dist/html/1.html" />
+        <option value="$PROJECT_DIR$/cms/my_cms/info/注意事项" />
         <option value="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/ueditor.all.js" />
         <option value="$PROJECT_DIR$/cms/my_cms/redux/actions.js" />
-        <option value="$PROJECT_DIR$/cms/my_cms/info/注意事项" />
+        <option value="$PROJECT_DIR$/cms/my_cms/views/index.ejs" />
+        <option value="$PROJECT_DIR$/cms/my_cms/dist/css/main.css" />
       </list>
     </option>
   </component>
@@ -456,7 +473,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="redux" />
+              <option name="myItemId" value="info" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -478,7 +495,199 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="info" />
+              <option name="myItemId" value="dist" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hjc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mhjc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="my_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dist" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codemirror" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hjc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mhjc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="my_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dist" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codemirror" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hjc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mhjc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="my_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dist" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codemirror" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hjc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mhjc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="my_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dist" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codemirror" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="htmlmixed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hjc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mhjc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="my_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dist" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hjc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mhjc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="my_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dist" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -509,9 +718,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js" />
       <recent name="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor" />
       <recent name="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\html" />
-      <recent name="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js" />
       <recent name="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\routes" />
       <recent name="C:\Users\Administrator\hjc\react\tree_react" />
     </key>
@@ -821,12 +1030,12 @@
       <workItem from="1489828470394" duration="20867000" />
       <workItem from="1490011137297" duration="181000" />
       <workItem from="1490091755211" duration="24554000" />
-      <workItem from="1490177628297" duration="17342000" />
+      <workItem from="1490177628297" duration="23780000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="519056000" />
+    <option name="totallyTimeSpent" value="525494000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -865,7 +1074,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27597764" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14608802" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20293398" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1148,13 +1357,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/lang/en/en.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="13167">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cms/my_cms/dist/css/tree.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.35736677" vertical-offset="0" max-vertical-offset="703">
@@ -1253,26 +1455,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cms/my_cms/dist/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="5195" max-vertical-offset="5833">
-          <caret line="298" column="1" selection-start-line="298" selection-start-column="1" selection-end-line="298" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cms/my_cms/dist/html/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.5" vertical-offset="57" max-vertical-offset="874">
           <caret line="17" column="36" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/ueditor.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2166" max-vertical-offset="7999">
-          <caret line="114" column="24" selection-start-line="114" selection-start-column="24" selection-end-line="114" selection-end-column="24" />
           <folding />
         </state>
       </provider>
@@ -1292,14 +1478,6 @@
           <folding>
             <marker date="1490091370517" expanded="true" signature="912:921" placeholder="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms/my_cms/views/index.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.0" vertical-offset="166" max-vertical-offset="1007">
-          <caret line="14" column="108" selection-start-line="14" selection-start-column="108" selection-end-line="14" selection-end-column="108" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1330,29 +1508,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/ueditor.all.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.266667" vertical-offset="32009" max-vertical-offset="559968">
-          <caret line="1693" column="19" selection-start-line="1693" selection-start-column="15" selection-end-line="1693" selection-end-column="19" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <marker date="1490247419540" expanded="true" signature="358839:358856" placeholder="..." />
-            <marker date="1490247419540" expanded="true" signature="363472:363490" placeholder="..." />
-            <marker date="1490247419540" expanded="true" signature="457330:457356" placeholder="..." />
-            <marker date="1490247419540" expanded="true" signature="873405:873423" placeholder="..." />
-            <marker date="1490247419540" expanded="true" signature="890647:890719" placeholder="..." />
-            <marker date="1490247419540" expanded="true" signature="900610:900636" placeholder="..." />
-            <marker date="1490247419540" expanded="true" signature="900832:900923" placeholder="..." />
-            <marker date="1490247419540" expanded="true" signature="901180:901255" placeholder="..." />
-            <marker date="1490247419540" expanded="true" signature="901442:901457" placeholder="..." />
-            <marker date="1490247419540" expanded="true" signature="977949:978021" placeholder="..." />
-            <marker date="1490247419540" expanded="true" signature="1029044:1029055" placeholder="..." />
-            <marker date="1490247419540" expanded="true" signature="1032992:1033005" placeholder="..." />
-            <marker date="1490247419540" expanded="true" signature="1033382:1033418" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cms/my_cms/info/注意事项">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8901454" vertical-offset="0" max-vertical-offset="665">
@@ -1361,13 +1516,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cms/my_cms/dist/js/codemirror/mode/d/d.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4237">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cms/my_cms/redux/actions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5218094" vertical-offset="266" max-vertical-offset="2622">
-          <caret line="31" column="43" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="247" max-vertical-offset="2641">
+          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms/my_cms/views/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-19.76" vertical-offset="209" max-vertical-offset="912">
+          <caret line="37" column="21" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms/my_cms/dist/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.87722135" vertical-offset="5195" max-vertical-offset="5909">
+          <caret line="301" column="29" selection-start-line="301" selection-start-column="29" selection-end-line="301" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -4,16 +4,8 @@
     <title><%= title %></title>
     <link rel='stylesheet' href='/css/main.css' />
     <link rel='stylesheet' href='/css/tree.css' />
+    <link rel='stylesheet' href='../js/codemirror/codemirror.css' />
 
-
-        <script type="text/javascript" src="../js/ueditor/SyntaxHighlighter/shCore.js"></script>
-        <!--所使用的SyntaxHighlighter样式-->
-        <link type="text/css" rel="stylesheet" href="../js/ueditor/SyntaxHighlighter/shCoreDefault.css"/>
-        <!--初始化SyntaxHighlighter的必须代码，必须放在head中，引入文件之后-->
-         <script type="text/javascript" charset="utf-8" src="../js/ueditor/ueditor.config.js"></script>
-            <script type="text/javascript" charset="utf-8" src="../js/ueditor/ueditor.all.js"> </script>
-            <script type="text/javascript" charset="utf-8" src="../js/ueditor/lang/zh-cn/zh-cn.js"></script>
-        <script type="text/javascript">SyntaxHighlighter.all();</script>
 
   </head>
   <body>
@@ -24,10 +16,9 @@
        <div  class="left" id="left"></div>
        <div  class="coment" id="coment">
 
-           <script id="container" name="content" type="text/plain">
+           <textarea  id="container" name="content" >
 
-           </script>
-         <textarea style="width:1000px;height:1000px;" id="r"></textarea>
+           </textarea >
        </div>
    </div>
 
@@ -35,13 +26,17 @@
     <script  type="text/javascript" src="/js/react.min.js"></script>
     <script  type="text/javascript" src="/js/tree.js"></script>
 
-    <!-- 实例化编辑器 -->
-    <script type="text/javascript">
-        var ue = UE.getEditor('container', {
-            autoHeight: true
-        });
-ue.options.allowDivTransToP = false;
+   <script type="text/javascript" charset="utf-8" src="../js/codemirror/codemirror.js"></script>
+   <script type="text/javascript" charset="utf-8" src="../js/codemirror/mode/css/css.js"></script>
+   <script type="text/javascript" charset="utf-8" src="../js/codemirror/mode/javascript/javascript.js"></script>
+   <script type="text/javascript" charset="utf-8" src="../js/codemirror/mode/htmlmixed/htmlmixed.js"></script>
 
+    <!-- 实例化编辑器 "text/html" -->
+    <script type="text/javascript">
+          var myTextarea = document.getElementById("container");
+          window.editor = CodeMirror.fromTextArea(myTextarea, {
+            mode:"css"
+          });
     </script>
   </body>
 </html>

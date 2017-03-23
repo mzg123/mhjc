@@ -29,9 +29,10 @@ module.exports={
             data: {path:path},
             dataType: "json",
             success: function (data) {
-                ue.setContent(data.filedata);
-                u//e.execCommand( 'inserthtml', data.filedata);
-                //dispatch({type:"getFileContent",filedata:data.filedata});
+                editor.setValue(data.filedata);
+                //ue.setContent(data.filedata.replace(/<html>/g, "<html1>").replace(/<head>/g, "<head1>").replace(/<body>/g, "<body1>")
+                //                            .replace(/<\/body>/g, "/<\/body1>").replace(/<\/head>/g, "/<\/head1>").replace(/<\/html>/g, "/<\/html1>"));
+
             },
             exception: function (data) {
                 alert("error");
