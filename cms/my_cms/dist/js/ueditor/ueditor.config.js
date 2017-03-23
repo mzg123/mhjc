@@ -44,8 +44,9 @@
             'simpleupload', 'insertimage', 'emotion', 'scrawl', 'insertvideo', 'music', 'attachment', 'map', 'gmap', 'insertframe', 'insertcode', 'webapp', 'pagebreak', 'template', 'background', '|',
             'horizontal', 'date', 'time', 'spechars', 'snapscreen', 'wordimage', '|',
             'inserttable', 'deletetable', 'insertparagraphbeforetable', 'insertrow', 'deleterow', 'insertcol', 'deletecol', 'mergecells', 'mergeright', 'mergedown', 'splittocells', 'splittorows', 'splittocols', 'charts', '|',
-            'print', 'preview', 'searchreplace', 'help', 'drafts'
+            'print',  'searchreplace', 'help', 'drafts'
         ]]
+        //'preview',
         //当鼠标放在工具栏上时显示的tooltip提示,留空支持自动多语言配置，否则以配置值为准
         //,labelMap:{
         //    'anchor':'', 'undo':''
@@ -111,32 +112,32 @@
         //粘贴只保留标签，去除标签所有属性
         //,retainOnlyLabelPasted: false
 
-        //,pasteplain:false  //是否默认为纯文本粘贴。false为不使用纯文本粘贴，true为使用纯文本粘贴
+        ,pasteplain:true  //是否默认为纯文本粘贴。false为不使用纯文本粘贴，true为使用纯文本粘贴
         //纯文本粘贴模式下的过滤规则
         //'filterTxtRules' : function(){
         //    function transP(node){
-        //        node.tagName = 'p';
-        //        node.setStyle();
+        //        //node.tagName = 'p';
+        //        //node.setStyle();
         //    }
         //    return {
-        //        //直接删除及其字节点内容
-        //        '-' : 'script style object iframe embed input select',
-        //        'p': {$:{}},
-        //        'br':{$:{}},
-        //        'div':{'$':{}},
-        //        'li':{'$':{}},
-        //        'caption':transP,
-        //        'th':transP,
-        //        'tr':transP,
-        //        'h1':transP,'h2':transP,'h3':transP,'h4':transP,'h5':transP,'h6':transP,
-        //        'td':function(node){
-        //            //没有内容的td直接删掉
-        //            var txt = !!node.innerText();
-        //            if(txt){
-        //                node.parentNode.insertAfter(UE.uNode.createText(' &nbsp; &nbsp;'),node);
-        //            }
-        //            node.parentNode.removeChild(node,node.innerText())
-        //        }
+        //        ////直接删除及其字节点内容
+        //        //'-' : 'script style object iframe embed input select',
+        //        //'p': {$:{}},
+        //        //'br':{$:{}},
+        //        //'div':{'$':{}},
+        //        //'li':{'$':{}},
+        //        //'caption':transP,
+        //        //'th':transP,
+        //        //'tr':transP,
+        //        //'h1':transP,'h2':transP,'h3':transP,'h4':transP,'h5':transP,'h6':transP,
+        //        //'td':function(node){
+        //        //    //没有内容的td直接删掉
+        //        //    var txt = !!node.innerText();
+        //        //    if(txt){
+        //        //        node.parentNode.insertAfter(UE.uNode.createText(' &nbsp; &nbsp;'),node);
+        //        //    }
+        //        //    node.parentNode.removeChild(node,node.innerText())
+        //        //}
         //    }
         //}()
 

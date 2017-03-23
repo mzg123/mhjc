@@ -1,0 +1,30 @@
+百度Ueditor编辑器的Html模式自动替换样式的解决方法
+时间 2014-03-28 09:34:38  CSDN博客
+原文  http://blog.csdn.net/wdw984/article/details/22375199
+主题 HTML UEditor
+百度的Ueditor编辑器出于安全性考虑，用户在html模式下粘贴进去的html文档会自动被去除样式和转义。虽然安全的，但是非常不方便。
+
+做一下修改把这个功能去掉。
+
+一、打开ueditor.all.js
+
+二、大概9300行找到 ///plugin 编辑器默认的过滤转换机制，把下面的
+
+'allowDivTransToP':true
+值改成false。为true的时候会自动把div转成p。
+
+三、大概9429行，有个case 'li'，这个是把li里面的样式去掉，把这个case注释掉。
+
+四、大概14058行，下面的第一个utils.each功能注释掉，这个是自动给li里面的内容增加一个p。
+
+五、大概14220行，
+
+node.className = utils.trim(node.className.replace(/list-paddingleft-\w+/,'')) + ' list-paddingleft-' + type;
+注释掉，这个是自动给ul增加一个内置的样式。
+
+下面的14222行
+
+li.style.cssText && (li.style.cssText = '');
+注释掉，这个是自动去除粘贴进去的代码的li的style样式
+
+至此，我们粘贴进去的html格式的ul和li就不会被转义了。

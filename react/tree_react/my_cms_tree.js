@@ -73,7 +73,7 @@ var Tree = React.createClass({
             if(item.child){
 
                 return(<li className={lic} >
-                    <a  onClick= {itemClick.bind(this)} >{item.text}</a>
+                    <a   onClick= {itemClick.bind(this)} >{item.text}</a>
                     <ul  className="items position_r "  style={{display:'none'}}>
                  {self(item.child,itemClick)}
                     </ul>
@@ -81,7 +81,7 @@ var Tree = React.createClass({
             }
             else{
                 return (<li className={lic}>
-                    <a id={item.text} onClick= {itemClick.bind(this)}>{item.text}</a>
+                    <a id={item.text} data-path={item.value} onClick= {itemClick.bind(this)}>{item.text}</a>
                 </li>)
             }
         })
@@ -95,7 +95,7 @@ var Tree = React.createClass({
             var t=ul.parent();
             t.hasClass("closed")?t.removeClass("closed").addClass("expand"):t.removeClass("expand").addClass("closed");
         }else{
-            this.props.onItemClick($(e.target).attr("id"));
+            this.props.onItemClick($(e.target).attr("data-path"));
         }
 
     },
@@ -138,6 +138,7 @@ var Tree = React.createClass({
 
 
 const mapStateToProps =function (state) {
+
     return {
         itemData:state.treeCounter.treeItems
         ,options:state.treeCounter.options
@@ -149,13 +150,10 @@ const mapStateToProps =function (state) {
 
 const mapDispatchToProps = function(dispatch ,ownProps) {
     return {
-        onItemClick: function(id){
-            alert(id);
-            //dispatch(actions.getAjaxLog(id));
-            dispatch({ type: "getdata"
-                ,param:id
-                ,data:new Date().getSeconds()
-            });
+        onItemClick: function(path){
+            //dispatch(actions.getFileInfo());
+            dispatch(actions.getFileContent(path));
+
         }
         ,getFileInfo:function(){
             dispatch(actions.getFileInfo());

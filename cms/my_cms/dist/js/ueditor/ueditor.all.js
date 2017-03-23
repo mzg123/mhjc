@@ -8698,7 +8698,8 @@ var filterWord = UE.filterWord = function () {
             //源码模式下输入html标签，不能做转换处理，直接输出
             arr.push(node.data)
         }else{
-            arr.push(notTransTagName[node.parentNode.tagName] ? utils.html(node.data) : node.data.replace(/[ ]{2}/g,' &nbsp;'))
+            arr.push(notTransTagName[node.parentNode.tagName] ? utils.html(node.data) : node.data.replace(/[ ]{2}/g,''))
+            //arr.push(notTransTagName[node.parentNode.tagName] ? utils.html(node.data) : node.data.replace(/[ ]{2}/g,' &nbsp;'))
         }
 
     }
@@ -9946,9 +9947,10 @@ var LocalStorage = UE.LocalStorage = (function () {
 ///plugin 编辑器默认的过滤转换机制
 
 UE.plugins['defaultfilter'] = function () {
+    return;
     var me = this;
     me.setOpt({
-        'allowDivTransToP':true,
+        'allowDivTransToP':false,
         'disabledTableInTable':true
     });
     //默认的过滤处理
@@ -10083,16 +10085,16 @@ UE.plugins['defaultfilter'] = function () {
                     case 'dd':
                         node.tagName = 'li';
                         break;
-                    case 'li':
-                        var className = node.getAttr('class');
-                        if (!className || !/list\-/.test(className)) {
-                            node.setAttr()
-                        }
-                        var tmpNodes = node.getNodesByTagName('ol ul');
-                        UE.utils.each(tmpNodes, function (n) {
-                            node.parentNode.insertAfter(n, node);
-                        });
-                        break;
+                    //case 'li':
+                    //    var className = node.getAttr('class');
+                    //    if (!className || !/list\-/.test(className)) {
+                    //        node.setAttr()
+                    //    }
+                    //    var tmpNodes = node.getNodesByTagName('ol ul');
+                    //    UE.utils.each(tmpNodes, function (n) {
+                    //        node.parentNode.insertAfter(n, node);
+                    //    });
+                    //    break;
                     case 'td':
                     case 'th':
                     case 'caption':
@@ -15111,6 +15113,7 @@ UE.plugins['list'] = function () {
     //进入编辑器的li要套p标签
     me.addInputRule(function(root){
         utils.each(root.getNodesByTagName('li'),function(li){
+            return;
             var tmpP = UE.uNode.createElement('p');
             for(var i= 0,ci;ci=li.children[i];){
                 if(ci.type == 'text' || dtd.p[ci.tagName]){
@@ -15264,9 +15267,9 @@ UE.plugins['list'] = function () {
 
             var style = domUtils.getStyle(node, 'list-style-type');
             style && (node.style.cssText = 'list-style-type:' + style);
-            node.className = utils.trim(node.className.replace(/list-paddingleft-\w+/,'')) + ' list-paddingleft-' + type;
+           // node.className = utils.trim(node.className.replace(/list-paddingleft-\w+/,'')) + ' list-paddingleft-' + type;
             utils.each(domUtils.getElementsByTagName(node,'li'),function(li){
-                li.style.cssText && (li.style.cssText = '');
+              //  li.style.cssText && (li.style.cssText = '');
                 if(!li.firstChild){
                     domUtils.remove(li);
                     return;

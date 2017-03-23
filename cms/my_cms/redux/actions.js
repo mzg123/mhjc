@@ -8,22 +8,38 @@ module.exports={
         return function (dispatch){
             $.ajax({
                 type: "get",
-                url: "http://10.0.130.129:3000/getFileTree",
+                url: "http://10.0.130.129:3000/file/getFileTree",
                 data: {},
                 dataType: "json",
                 success: function (data) {
-
                     dispatch({type:"getFileInfo",treeItems:[data]});
                 },
                 exception: function (data) {
                     alert("error");
                     console.log(data);
                 }
-
             });
-
         }
     },
+    getFileContent:function(path){
+    return function (dispatch){
+        $.ajax({
+            type: "get",
+            url: "http://10.0.130.129:3000/file/getFileContent",
+            data: {path:path},
+            dataType: "json",
+            success: function (data) {
+                ue.setContent(data.filedata);
+                u//e.execCommand( 'inserthtml', data.filedata);
+                //dispatch({type:"getFileContent",filedata:data.filedata});
+            },
+            exception: function (data) {
+                alert("error");
+                console.log(data);
+            }
+        });
+    }
+},
     getAjaxLog:function(subreddit) {
         return function (dispatch) {
 

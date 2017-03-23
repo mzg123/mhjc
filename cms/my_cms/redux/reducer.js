@@ -4,6 +4,7 @@ var inits=function initState(){
         state:1,
         content:{},
         currenttxt:"",
+        filedata:"",
         treeItems:[
 
         ]
@@ -45,19 +46,21 @@ module.exports={
 
         switch (action.type) {
             case "getFileInfo":
-
                 state.treeItems=action.treeItems;
                 return deepCopy(state);
-            //return $.extend({},state);
+           case "getFileContent":
+
+               state.filedata=action.filedata;
+               return deepCopy(state);
             case "loadding":
                 state.state=0;
                 return deepCopy(state);
                 //return $.extend({},state);
             case "getdata":
 
-                state.content[action.param]? state.content[action.param]= action.data+"\n\n"+state.content[action.param]: state.content[action.param]=action.data;
-                state.content.currentcontent=state.content[action.param];
-                state.currenttxt=state.content[action.param];
+                //state.content[action.param]? state.content[action.param]= action.data+"\n\n"+state.content[action.param]: state.content[action.param]=action.data;
+                //state.content.currentcontent=state.content[action.param];
+                //state.currenttxt=state.content[action.param];
                 return deepCopy(state);
                 //return $.extend({},state);
             default:

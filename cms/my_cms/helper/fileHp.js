@@ -38,6 +38,7 @@ function _readFile(path,filesList,targetObj)
             obj.size = states.size;//文件大小，以字节为单位
             obj.name = file;//文件名
             obj.path = path+'/'+file; //文件绝对路径
+
             if(targetObj["child"])
             {
                 var item = {text:file,value:obj.path}
@@ -60,4 +61,8 @@ exports.writeFile=function (fileName,data)
     {
         console.log("文件生成成功");
     }
+}
+//读取文件内容
+exports.readFileSync=function(path){
+  return  mfs.readFileSync(path,"utf-8");
 }

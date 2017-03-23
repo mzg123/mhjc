@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
-var getFileTree = require('./routes/getFileTree');
+var getFileTree = require('./routes/file');
 var app = express();
 
 // view engine setup
@@ -24,7 +24,7 @@ app.use(express.static(path.join(__dirname, 'dist')));
 
 app.use('/', routes);
 app.use('/users',users);
-app.use('/getFileTree',getFileTree );
+app.use('/file',getFileTree );
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
