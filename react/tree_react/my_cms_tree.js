@@ -101,6 +101,7 @@ var Tree = React.createClass({
     },
 
     componentDidMount() {
+
     this.props.getFileInfo();
 
         //this.props.router.setRouteLeaveHook(

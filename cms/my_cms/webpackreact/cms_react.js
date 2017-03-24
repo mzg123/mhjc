@@ -15,14 +15,22 @@ var Router=reactRouter.Router, Route=reactRouter.Route,IndexRoute=reactRouter.In
 
 //reduxStore.initState();
 
+function d(e,ee,eee,w){
+    console.log(this.state);
+}
 
-//<Router history={browserHistory}>
-//    <Route path="/"  component={Mycms }>
-//        <IndexRoute component={Mycms}/>
-//        <Route path="static"   component={Mycms} />
-//        <Route path="templet"   component={Mycms} />
-//    </Route>
-//</Router>
+//ReactDOM.render(
+//    <Provider store={reduxStore}>
+//
+//        <Router history={browserHistory}>
+//            <Route path="/"  component={Mycms }>
+//                <IndexRoute component={Mycms}/>
+//                <Route path="static"   component={Mycms} />
+//                <Route path="templet"  onLeave={d} onEnter={d}    component={Mycms} />
+//            </Route>
+//        </Router>
+//    </Provider>
+//    , document.body);
 ReactDOM.render(
     <Provider store={reduxStore}>
 
