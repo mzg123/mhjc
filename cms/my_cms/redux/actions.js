@@ -46,11 +46,12 @@ module.exports={
         $.ajax({
             type: "post",
             url: "http://10.0.130.129:3000/file/saveFileContent",
-            //data: {fileData: window.editor.getValue(),fileName:opt.filePath},
-            data: {fileData: window.editor.getValue(),fileName:"D:/DevCode-Git/yg_online/web/static/html/active/mzg.html"},
+            data: {fileData: window.editor.getValue(),fileName:opt.filePath},
+            //data: {fileData: window.editor.getValue(),fileName:"D:/DevCode-Git/yg_online/web/static/html/active/mzg.html"},
             dataType: "json",
             success: function (data) {
                 dispatch(getFileInfo());
+                alert("success");
             },
             exception: function (data) {
                 alert("error");
