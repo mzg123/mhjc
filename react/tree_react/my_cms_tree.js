@@ -99,6 +99,7 @@ var Tree = React.createClass({
         }
 
     },
+
     componentDidMount() {
     this.props.getFileInfo();
 

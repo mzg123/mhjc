@@ -74,7 +74,7 @@ module.exports={
             ,data:[
                 {
                     tag:"静态资源"
-                    ,href:"/"
+                    ,href:"/static"
 
                 }
                 //, {
@@ -123,7 +123,7 @@ module.exports={
                 //}
                 ,{
                     tag:"模板"
-                    ,href:"/ejs"
+                    ,href:"/templet"
 
                 }
             ]

@@ -4,7 +4,7 @@ require("./my_cms.css");
 var Redux=require("redux");
 var actions=require("../../redux/actions.js");
 var Tree=require("../../../../react/tree_react/my_cms_tree.js");
-var Nav=require("../../../../react/nav/nav.js");
+var Nav=require("../../../../react/nav/my_cms_nav.js");
 var Codeeditor=require("../../../../react/codeeditor/codeeditor.js");
 
 var connect=reactRedux.connect,provider =reactRedux.Provider;

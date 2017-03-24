@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5736c30a-62bb-4f8b-9f9d-ace8984654b1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms/my_cms/redux/actions.js" afterPath="$PROJECT_DIR$/cms/my_cms/redux/actions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms/my_cms/config/my_cms.js" afterPath="$PROJECT_DIR$/cms/my_cms/config/my_cms.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/react/nav/my_cms_nav.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/react/nav/my_cms_nav.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms/my_cms/webpackreact/cms_react.js" afterPath="$PROJECT_DIR$/cms/my_cms/webpackreact/cms_react.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms/my_cms/webpackreact/my_cms/my_cms.js" afterPath="$PROJECT_DIR$/cms/my_cms/webpackreact/my_cms/my_cms.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/react/tree_react/my_cms_tree.js" afterPath="$PROJECT_DIR$/react/tree_react/my_cms_tree.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms/my_cms/redux/reducer.js" afterPath="$PROJECT_DIR$/cms/my_cms/redux/reducer.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms/my_cms/dist/js/tree.js" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/tree.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -30,31 +35,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="fileHp.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cms/my_cms/helper/fileHp.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="763" max-vertical-offset="1406">
-              <caret line="59" column="52" selection-start-line="59" selection-start-column="44" selection-end-line="59" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cms/my_cms/views/index.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.92" vertical-offset="109" max-vertical-offset="722">
-              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="cms_react.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cms/my_cms/webpackreact/cms_react.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="46" max-vertical-offset="684">
-              <caret line="15" column="10" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="10" />
+            <state vertical-scroll-proportion="-8.0" vertical-offset="64" max-vertical-offset="817">
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -63,8 +48,18 @@
       <file leaf-file-name="my_cms_tree.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/react/tree_react/my_cms_tree.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.166667" vertical-offset="2667" max-vertical-offset="3306">
-              <caret line="158" column="44" selection-start-line="158" selection-start-column="10" selection-end-line="158" selection-end-column="44" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1717" max-vertical-offset="3325">
+              <caret line="109" column="6" selection-start-line="109" selection-start-column="6" selection-end-line="109" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="info" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/react/info">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="380">
+              <caret line="11" column="25" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -73,30 +68,21 @@
       <file leaf-file-name="reducer.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cms/my_cms/redux/reducer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="437" max-vertical-offset="3458">
-              <caret line="44" column="68" selection-start-line="44" selection-start-column="68" selection-end-line="44" selection-end-column="68" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1349" max-vertical-offset="2983">
+              <caret line="121" column="17" selection-start-line="121" selection-start-column="17" selection-end-line="121" selection-end-column="17" />
               <folding>
-                <element signature="e#5556#12053#0" expanded="false" />
-                <element signature="e#12093#13354#0" expanded="false" />
+                <element signature="e#823#1787#0" expanded="false" />
+                <element signature="e#5566#12063#0" expanded="false" />
+                <element signature="e#12103#13364#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="store.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cms/my_cms/redux/store.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1140">
-              <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="actions.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="actions.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cms/my_cms/redux/actions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5956113" vertical-offset="228" max-vertical-offset="2603">
+            <state vertical-scroll-proportion="0.0" vertical-offset="228" max-vertical-offset="2603">
               <caret line="53" column="30" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
               <folding>
                 <element signature="e#821#1334#0" expanded="false" />
@@ -105,11 +91,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="my_cms.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="nav.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/react/nav/nav.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-15.2" vertical-offset="1482" max-vertical-offset="2907">
+              <caret line="102" column="9" selection-start-line="102" selection-start-column="9" selection-end-line="102" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="my_cms.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cms/my_cms/webpackreact/my_cms/my_cms.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="133" max-vertical-offset="1178">
-              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.17040358" vertical-offset="0" max-vertical-offset="1178">
+              <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -118,8 +114,8 @@
       <file leaf-file-name="codeeditor.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/react/codeeditor/codeeditor.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="114" max-vertical-offset="1007">
-              <caret line="19" column="68" selection-start-line="19" selection-start-column="68" selection-end-line="19" selection-end-column="68" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1007">
+              <caret line="12" column="19" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -133,7 +129,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/other/zlib_client.js" />
         <option value="$PROJECT_DIR$/other/zip.js" />
         <option value="$PROJECT_DIR$/other/zlib_server.js" />
         <option value="$PROJECT_DIR$/other/file_watch.js" />
@@ -162,7 +157,6 @@
         <option value="$PROJECT_DIR$/cms/my_cms/dist/html/main.css" />
         <option value="$PROJECT_DIR$/cms/my_cms/dist/html/ypf.html" />
         <option value="$PROJECT_DIR$/cms/my_cms/app.js" />
-        <option value="$PROJECT_DIR$/react/tree_react/my_cms_tree.js" />
         <option value="$PROJECT_DIR$/cms/my_cms/dist/js/ueditor/ueditor.config.js" />
         <option value="$PROJECT_DIR$/cms/my_cms/dist/html/index.html" />
         <option value="$PROJECT_DIR$/cms/my_cms/dist/html/1.html" />
@@ -175,15 +169,17 @@
         <option value="$PROJECT_DIR$/react/nav/nav.js" />
         <option value="$PROJECT_DIR$/webpackbuildjs/react/tree_react.js" />
         <option value="$PROJECT_DIR$/cms/my_cms/dist/css/main.css" />
-        <option value="$PROJECT_DIR$/cms/my_cms/webpackreact/cms_react.js" />
         <option value="$PROJECT_DIR$/react/codeeditor/codeeditor.css" />
         <option value="$PROJECT_DIR$/cms/my_cms/redux/store.js" />
-        <option value="$PROJECT_DIR$/cms/my_cms/webpackreact/my_cms/my_cms.js" />
         <option value="$PROJECT_DIR$/react/codeeditor/codeeditor.js" />
-        <option value="$PROJECT_DIR$/cms/my_cms/redux/reducer.js" />
         <option value="$PROJECT_DIR$/cms/my_cms/views/index.ejs" />
         <option value="$PROJECT_DIR$/cms/my_cms/config/my_cms.js" />
         <option value="$PROJECT_DIR$/cms/my_cms/redux/actions.js" />
+        <option value="$PROJECT_DIR$/cms/my_cms/redux/reducer.js" />
+        <option value="$PROJECT_DIR$/react/tree_react/my_cms_tree.js" />
+        <option value="$PROJECT_DIR$/cms/my_cms/webpackreact/cms_react.js" />
+        <option value="$PROJECT_DIR$/react/nav/my_cms_nav.js" />
+        <option value="$PROJECT_DIR$/cms/my_cms/webpackreact/my_cms/my_cms.js" />
       </list>
     </option>
   </component>
@@ -255,8 +251,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -321,25 +317,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tree_react" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hjc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mhjc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="react" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="codeeditor" />
+              <option name="myItemId" value="nav" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -502,11 +480,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\mhjc\mhjc\react\nav" />
       <recent name="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js" />
       <recent name="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\js\ueditor" />
       <recent name="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\html" />
       <recent name="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\routes" />
-      <recent name="C:\Users\Administrator\hjc\react\tree_react" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Administrator\hjc\vue" />
@@ -814,12 +792,13 @@
       <workItem from="1489828470394" duration="20867000" />
       <workItem from="1490011137297" duration="181000" />
       <workItem from="1490091755211" duration="24554000" />
-      <workItem from="1490177628297" duration="44569000" />
+      <workItem from="1490177628297" duration="45621000" />
+      <workItem from="1490347236817" duration="2209000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="546283000" />
+    <option name="totallyTimeSpent" value="549544000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -842,8 +821,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -855,8 +834,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2547486" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22098215" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20599023" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -865,11 +843,12 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2645382" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -928,31 +907,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vue/component/helloword/main.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="178" max-vertical-offset="1026">
-          <caret line="43" column="44" selection-start-line="43" selection-start-column="3" selection-end-line="43" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="757" max-vertical-offset="1577">
-          <caret line="25" column="22" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vue/webpack.config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1561" max-vertical-offset="2432">
           <caret line="112" column="36" selection-start-line="112" selection-start-column="23" selection-end-line="112" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/react/info">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="586">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -997,7 +955,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="639">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1060,7 +1017,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.23787168" vertical-offset="0" max-vertical-offset="639">
           <caret line="8" column="14" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1075,7 +1031,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1938">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1107,7 +1062,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.9" vertical-offset="5441" max-vertical-offset="6555">
           <caret line="302" column="16" selection-start-line="302" selection-start-column="16" selection-end-line="302" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1115,7 +1069,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-18.321428" vertical-offset="228" max-vertical-offset="950">
           <caret line="39" column="54" selection-start-line="39" selection-start-column="54" selection-end-line="39" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1123,7 +1076,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.5" vertical-offset="57" max-vertical-offset="874">
           <caret line="17" column="36" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1132,24 +1084,22 @@
         <state vertical-scroll-proportion="11.535714" vertical-offset="912" max-vertical-offset="18620">
           <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
           <folding>
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ul#0;n#ul#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ul#1;n#ul#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#span#1;n#div#0;n#div#1;n#li#0;n#ul#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#3;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#p#4;n#div#0;n#li#0;n#ul#0;n#div#1;n#div#4;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#p#4;n#div#0;n#li#1;n#ul#0;n#div#1;n#div#4;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#p#4;n#div#0;n#li#2;n#ul#0;n#div#1;n#div#4;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#p#4;n#div#0;n#li#3;n#ul#0;n#div#1;n#div#4;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#p#4;n#div#0;n#li#4;n#ul#0;n#div#1;n#div#4;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#p#4;n#div#0;n#li#5;n#ul#0;n#div#1;n#div#4;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#p#5;n#div#0;n#li#0;n#ul#0;n#div#1;n#div#5;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#p#5;n#div#0;n#li#1;n#ul#0;n#div#1;n#div#5;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#p#5;n#div#0;n#li#2;n#ul#0;n#div#1;n#div#5;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#script#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#5;n#form#0;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#9;n#!!top" expanded="true" />
-            <marker date="1490246096801" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1490246096801" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#ul#0;n#ul#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#ul#1;n#ul#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#0;n#span#1;n#div#0;n#div#1;n#li#0;n#ul#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#3;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#0;n#p#4;n#div#0;n#li#0;n#ul#0;n#div#1;n#div#4;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#0;n#p#4;n#div#0;n#li#1;n#ul#0;n#div#1;n#div#4;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#0;n#p#4;n#div#0;n#li#2;n#ul#0;n#div#1;n#div#4;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#0;n#p#4;n#div#0;n#li#3;n#ul#0;n#div#1;n#div#4;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#0;n#p#4;n#div#0;n#li#4;n#ul#0;n#div#1;n#div#4;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#0;n#p#4;n#div#0;n#li#5;n#ul#0;n#div#1;n#div#4;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#0;n#p#5;n#div#0;n#li#0;n#ul#0;n#div#1;n#div#5;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#0;n#p#5;n#div#0;n#li#1;n#ul#0;n#div#1;n#div#5;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#0;n#p#5;n#div#0;n#li#2;n#ul#0;n#div#1;n#div#5;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#script#2;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#5;n#form#0;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#9;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1158,7 +1108,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8901454" vertical-offset="0" max-vertical-offset="665">
           <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1166,7 +1115,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4237">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1182,9 +1130,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7496206" vertical-offset="0" max-vertical-offset="1577">
           <caret line="26" column="25" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="25" />
-          <folding>
-            <marker date="1490091370517" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1192,17 +1138,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="1273">
           <caret line="20" column="18" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="18" />
-          <folding>
-            <marker date="1490231462954" expanded="true" signature="-1:-1" placeholder="//..." />
-            <marker date="1490231462954" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1490231462954" expanded="true" signature="-1:-1" placeholder="//..." />
-            <marker date="1490231462954" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1490231462954" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1490231462954" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1490231462954" expanded="true" signature="-1:-1" placeholder="//..." />
-            <marker date="1490231462954" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1490231462954" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1210,12 +1146,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="551">
           <caret line="16" column="53" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="53" />
-          <folding>
-            <marker date="1490324121889" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1490324121889" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1490324121889" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1490324121889" expanded="true" signature="-1:-1" placeholder="//..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1223,13 +1154,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="665">
           <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
-          <folding>
-            <marker date="1490324236740" expanded="true" signature="-1:-1" placeholder="/*...*/" />
-            <marker date="1490324236740" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1490324236740" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1490324236740" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1490324236740" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1237,7 +1162,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="624">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1245,15 +1169,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.298077" vertical-offset="3306" max-vertical-offset="4275">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webpackbuildjs/react/tree_react.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="475" max-vertical-offset="1273">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1261,7 +1176,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.20032051" vertical-offset="5195" max-vertical-offset="5985">
           <caret line="279" column="16" selection-start-line="279" selection-start-column="16" selection-end-line="279" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1277,15 +1191,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="624">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/react/nav/nav.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.63461536" vertical-offset="1941" max-vertical-offset="2907">
-          <caret line="123" column="38" selection-start-line="123" selection-start-column="31" selection-end-line="123" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1293,41 +1198,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1140">
           <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms/my_cms/redux/reducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="437" max-vertical-offset="3458">
-          <caret line="44" column="68" selection-start-line="44" selection-start-column="68" selection-end-line="44" selection-end-column="68" />
-          <folding>
-            <element signature="e#5556#12053#0" expanded="false" />
-            <element signature="e#12093#13354#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/react/codeeditor/codeeditor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="114" max-vertical-offset="1007">
-          <caret line="19" column="68" selection-start-line="19" selection-start-column="68" selection-end-line="19" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms/my_cms/webpackreact/my_cms/my_cms.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="190" max-vertical-offset="1178">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/react/tree_react/my_cms_tree.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.166667" vertical-offset="2667" max-vertical-offset="3306">
-          <caret line="158" column="44" selection-start-line="158" selection-start-column="10" selection-end-line="158" selection-end-column="44" />
           <folding />
         </state>
       </provider>
@@ -1342,16 +1212,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cms/my_cms/views/index.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.92" vertical-offset="109" max-vertical-offset="722">
+        <state vertical-scroll-proportion="0.0" vertical-offset="532" max-vertical-offset="722">
           <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms/my_cms/webpackreact/cms_react.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="46" max-vertical-offset="684">
-          <caret line="15" column="10" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="10" />
           <folding />
         </state>
       </provider>
@@ -1366,11 +1228,95 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cms/my_cms/redux/actions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5956113" vertical-offset="228" max-vertical-offset="2603">
+        <state vertical-scroll-proportion="0.0" vertical-offset="228" max-vertical-offset="2603">
           <caret line="53" column="30" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
           <folding>
             <element signature="e#821#1334#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react/nav/nav.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.2" vertical-offset="1482" max-vertical-offset="2907">
+          <caret line="102" column="9" selection-start-line="102" selection-start-column="9" selection-end-line="102" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpackbuildjs/react/tree_react.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.857997" vertical-offset="72" max-vertical-offset="1273">
+          <caret line="34" column="41" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react/info">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="380">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms/my_cms/redux/reducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1349" max-vertical-offset="2983">
+          <caret line="121" column="17" selection-start-line="121" selection-start-column="17" selection-end-line="121" selection-end-column="17" />
+          <folding>
+            <element signature="e#823#1787#0" expanded="false" />
+            <element signature="e#5566#12063#0" expanded="false" />
+            <element signature="e#12103#13364#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react/codeeditor/codeeditor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="1007">
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react/tree_react/my_cms_tree.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1717" max-vertical-offset="3325">
+          <caret line="109" column="6" selection-start-line="109" selection-start-column="6" selection-end-line="109" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react/nav/my_cms_nav.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="669">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react/nav/my_cms_nav.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.056801196" vertical-offset="0" max-vertical-offset="2907">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms/my_cms/webpackreact/cms_react.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.0" vertical-offset="64" max-vertical-offset="817">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms/my_cms/webpackreact/my_cms/my_cms.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17040358" vertical-offset="0" max-vertical-offset="1178">
+          <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
+          <folding />
         </state>
       </provider>
     </entry>
