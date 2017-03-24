@@ -12,6 +12,10 @@ exports.readFileSync=function(opt){
     return readFileSync(opt.path);
 }
 
+exports.writeFile=function(opt){
+
+     writeFile(opt.fileName,opt.fileData,opt.callBack);
+}
 //var config=require('../config/my_cms.js');
 //var filesList = getFilesInfo(config.staticPath);
 //var str = JSON.stringify({name:'static',children:filesList});

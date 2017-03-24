@@ -30,9 +30,6 @@ module.exports={
             dataType: "json",
             success: function (data) {
                 editor.setValue(data.filedata);
-                //ue.setContent(data.filedata.replace(/<html>/g, "<html1>").replace(/<head>/g, "<head1>").replace(/<body>/g, "<body1>")
-                //                            .replace(/<\/body>/g, "/<\/body1>").replace(/<\/head>/g, "/<\/head1>").replace(/<\/html>/g, "/<\/html1>"));
-
             },
             exception: function (data) {
                 alert("error");

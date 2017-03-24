@@ -15,7 +15,7 @@
    <div class="main">
        <div  class="left" id="left"></div>
        <div  class="coment" id="coment">
-
+        <button id="save">保存</button>
            <textarea  id="container" name="content" >
 
            </textarea >
@@ -37,6 +37,22 @@
           window.editor = CodeMirror.fromTextArea(myTextarea, {
             mode:"css"
           });
+
+          $("#save").on("click",function(){
+            $.ajax({
+                      type: "post",
+                      url: "http://10.0.130.129:3000/file/saveFileContent",
+                      data: {fileData: window.editor.getValue(),fileName:"D:/DevCode-Git/yg_online/web/static/html/active/mzg.html"},
+                      dataType: "json",
+                      success: function (data) {
+                          alert("success");
+                      },
+                      exception: function (data) {
+                          alert("error");
+                          console.log(data);
+                      }
+                  });
+          })
     </script>
   </body>
 </html>

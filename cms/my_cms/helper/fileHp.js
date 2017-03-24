@@ -54,9 +54,10 @@ function _readFile(path,filesList,targetObj)
 }
 
 //写入文件utf-8格式
-exports.writeFile=function (fileName,data)
+exports.writeFile=function (fileName,fileData,callBack)
 {
-    mfs.writeFile(fileName,data,'utf-8',complete);
+
+    mfs.writeFile(fileName,fileData,'utf-8',callBack||complete);
     function complete()
     {
         console.log("文件生成成功");
