@@ -2,9 +2,7 @@ var inits=function initState(){
 
     return {
         state:1,
-        content:{},
-        currenttxt:"",
-        filedata:"",
+        selectFile:"",
         treeItems:[
 
         ]
@@ -30,27 +28,24 @@ function deepCopy(p, c) {
 }
 module.exports={
     initState:inits
-    ,counter:function (state,action) {
-    state||(state={mzg:"mzg"});
-    switch (action.type) {
-        case 'INCREMENT':
-            return state;
-        case 'DECREMENT':
-            return state;
-        default:
-            return state;
+    ,codeEditorCounter:function(state , action){
+        state||(state=inits());
+        switch (action.type){
+            case "saveFile":
+                return deepCopy(state);
+            default:
+                return  state;
+        }
     }
-}
 ,treeCounter:function (state , action) {
     state||(state=inits());
 
         switch (action.type) {
             case "getFileInfo":
-                state.treeItems=action.treeItems;
+                action.treeItems&&(state.treeItems=action.treeItems);
                 return deepCopy(state);
            case "getFileContent":
-
-               state.filedata=action.filedata;
+               state.selectFile=action.selectFile;
                return deepCopy(state);
             case "loadding":
                 state.state=0;

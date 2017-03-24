@@ -6,6 +6,7 @@ var combineReducers=redux.combineReducers,createStore=redux.createStore,applyMid
     counter=reducer.counter,treeCounter=reducer.treeCounter,
     navCounter=reducer.navCounter,
     tabCounter=reducer.tabCounter,
+    codeEditorCounter=reducer.codeEditorCounter,
     formCounter=reducer.formCounter,
     initState=reducer.initState;
 /**
@@ -23,7 +24,7 @@ var combineReducers=redux.combineReducers,createStore=redux.createStore,applyMid
 
 // 创建 Redux store 来存放应用的状态。
 // API 是 { subscribe, dispatch, getState }。
-var reducer = combineReducers({ counter:counter,treeCounter:treeCounter,navCounter:navCounter,tabCounter:tabCounter,formCounter:formCounter});
+var reducer = combineReducers({ counter:counter,treeCounter:treeCounter,navCounter:navCounter,tabCounter:tabCounter,formCounter:formCounter,codeEditorCounter:codeEditorCounter});
 var store = createStore(reducer,applyMiddleware(thunkMiddleware));
 
 store.initState=initState;
@@ -38,9 +39,9 @@ store.initState=initState;
 //    }
 //
 //);
-store.sub=function(fn){
-    store.subscribe(fn);
-}
+//store.sub=function(fn){
+//    store.subscribe(fn);
+//}
 // 改变内部 state 惟一方法是 dispatch 一个 action。
 // action 可以被序列化，用日记记录和储存下来，后期还可以以回放的方式执行
 // store.dispatch({ type: 'INCREMENT' });

@@ -9,18 +9,7 @@
 
   </head>
   <body>
-   <div class="nav" id="nav">
 
-   </div>
-   <div class="main">
-       <div  class="left" id="left"></div>
-       <div  class="coment" id="coment">
-        <button id="save">保存</button>
-           <textarea  id="container" name="content" >
-
-           </textarea >
-       </div>
-   </div>
 
     <script  type="text/javascript" src="http://ob4uot9cp.bkt.clouddn.com/lib.js"></script>
     <script  type="text/javascript" src="/js/react.min.js"></script>
@@ -38,21 +27,6 @@
             mode:"css"
           });
 
-          $("#save").on("click",function(){
-            $.ajax({
-                      type: "post",
-                      url: "http://10.0.130.129:3000/file/saveFileContent",
-                      data: {fileData: window.editor.getValue(),fileName:"D:/DevCode-Git/yg_online/web/static/html/active/mzg.html"},
-                      dataType: "json",
-                      success: function (data) {
-                          alert("success");
-                      },
-                      exception: function (data) {
-                          alert("error");
-                          console.log(data);
-                      }
-                  });
-          })
     </script>
   </body>
 </html>
