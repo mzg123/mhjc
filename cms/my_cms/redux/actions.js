@@ -22,7 +22,7 @@ module.exports={
             });
         }
     },
-    getFileContent:function(path,type){
+    getFileContent:function(path){
     return function (dispatch){
         $.ajax({
             type: "get",

@@ -3,6 +3,7 @@ var inits=function initState(){
     return {
         state:1,
         selectFile:"",
+        tab:{tabType:0},//0表示代码编辑 1表示文件管理
         treeItems:[
 
         ]
@@ -41,11 +42,21 @@ module.exports={
     state||(state=inits());
 
         switch (action.type) {
-            case "getFileInfo":
 
+            case "showFolder":
+                var temp=null;
+                action.path.split('/').forEach(function(t){
+                    temp?(temp=temp[t]):temp=state.treeItems[t]
+                })
+                 console.log(temp,9087);
+                console.log(state.treeItems);
+                //state.treeItems[]
+                return deepCopy(state);
+            case "getFileInfo":
                 action.treeItems&&(state.treeItems=action.treeItems);
                 return deepCopy(state);
            case "getFileContent":
+
                state.selectFile=action.selectFile;
                return deepCopy(state);
             case "loadding":
@@ -78,50 +89,6 @@ module.exports={
                     ,href:"1"
 
                 }
-                //, {
-                //    tag:"组件管理"
-                //    ,MenuEc:"leave"
-                //    ,child:[
-                //        {
-                //            tag:"lefttree"
-                //            ,href:"/tree"
-                //        }
-                //        ,{
-                //            tag:"轮播"
-                //            ,href:"/roller"
-                //        }
-                //        ,{
-                //            tag:"tabs"
-                //            ,href:"/tabs"
-                //        }
-                //        ,{
-                //            tag:"modals"
-                //            ,href:"/modals"
-                //        }
-                //         ,{
-                //             tag:"tabcomtent"
-                //             ,href:"/tabcomtent"
-                //         }
-                //         ,{
-                //             tag:"form"
-                //             ,href:"/form"
-                //         }
-                //    ]
-                //}
-                //, {
-                //    tag:"债权转让"
-                //    ,MenuEc:"leave"
-                //    ,child:[
-                //        {
-                //            tag:"p2p债券"
-                //            ,href:"/test"
-                //        }
-                //        ,{
-                //            tag:"p2p债券"
-                //            ,href:"/test"
-                //        }
-                //    ]
-                //}
                 ,{
                     tag:"模板"
                     ,href:"2"
@@ -296,7 +263,8 @@ module.exports={
 
         switch(action.type){
             case "tabclick":
-                state.tabData.currentTabIndex=action.tabIndex;
+                state.tab.tabType=action.tabIndex;
+                    state.tabData.currentTabIndex=action.tabIndex;
                 return deepCopy(state);
                 //return $.extend({},state);
             case "loadData1":

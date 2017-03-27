@@ -70,10 +70,11 @@ var Tree = React.createClass({
         return data.map(function(item,index){
 
             var lic="position_r item closed ";//+item.text;
+
             if(item.child){
 
                 return(<li className={lic} >
-                    <a   onClick= {itemClick.bind(this)} >{item.text}</a>
+                    <a  data-path={item.value}  onClick= {itemClick.bind(this)} >{item.text}</a>
                     <ul  className="items position_r "  style={{display:'none'}}>
                  {self(item.child,itemClick)}
                     </ul>
@@ -81,7 +82,7 @@ var Tree = React.createClass({
             }
             else{
                 return (<li className={lic}>
-                    <a id={item.text} data-path={item.value} onClick= {itemClick.bind(this)}>{item.text}</a>
+                    <a id={item.text} data-path={item.value} data-isFile={item.isFile}    onClick= {itemClick.bind(this)}>{item.text}</a>
                 </li>)
             }
         })
@@ -94,14 +95,13 @@ var Tree = React.createClass({
             ul.toggle(100);
             var t=ul.parent();
             t.hasClass("closed")?t.removeClass("closed").addClass("expand"):t.removeClass("expand").addClass("closed");
-        }else{
-            this.props.onItemClick($(e.target).attr("data-path"));
-        }
 
+        }else{
+        }
+        this.props.onItemClick($(e.target).attr("data-path"),$(e.target).attr("data-isFile"),this.props.tabType);
     },
 
     componentDidMount() {
-
     this.props.getFileInfo();
         //this.props.router.setRouteLeaveHook(
         //    this.props.route,
@@ -115,6 +115,7 @@ var Tree = React.createClass({
         //if (true)
         //    return '确认要离开？';
     },
+
     render: function () {
         var d=this.props.itemData;
 
@@ -140,25 +141,26 @@ var Tree = React.createClass({
 
 
 const mapStateToProps =function (state) {
-
     return {
         itemData:state.treeCounter.treeItems
         ,options:state.treeCounter.options
         ,state:state.treeCounter.state
         ,content:state.treeCounter.content
         ,currentcontent:state.treeCounter.currenttxt
+        ,tabType:state.tabCounter.tab.tabType
     }
 }
 
 const mapDispatchToProps = function(dispatch ,ownProps) {
     return {
-        onItemClick: function(path){
-            //dispatch(actions.getFileInfo());
-            dispatch(actions.getFileContent(path,1));
+        onItemClick: function(path,isFile,tabType){
+
+            tabType==0&&isFile&&dispatch(actions.getFileContent(path,1));
+            tabType==1&&dispatch({type:"showFolder",path:path});
 
         }
         ,getFileInfo:function(){
-            dispatch(actions.getFileInfo());
+            dispatch(actions.getFileInfo({pathType:1}));
         }
     }
 }

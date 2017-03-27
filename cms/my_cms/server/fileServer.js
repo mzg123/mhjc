@@ -6,7 +6,7 @@ var readFileSync=require('../helper/fileHp').readFileSync;
 exports.getFileTree=function(opt){
 
     var filesList = getFilesInfo(opt.path);
-    return opt.text? {text:'static',child:filesList}:filesList;
+    return opt.text? {text:'static',value:'staticback',child:filesList}:filesList;
 }
 
 exports.readFileSync=function(opt){

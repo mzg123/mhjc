@@ -18,15 +18,15 @@ function _readFile(path,filesList,targetObj)
         states = mfs.statSync(path+'/'+file);
         if(states.isDirectory())
         {
-            var item ;
+            var item  ;
             if(targetObj["child"])
             {
-                item = {text:file,child:[]};
+                item = {text:file,child:[],value:path+"/"+file};
                 targetObj["child"].push(item);
             }
             else
             {
-                item = {text:file,child:[]};
+                item = {text:file,child:[],value:path+"/"+file};
                 filesList.push(item);
             }
             _readFile(path+'/'+file,filesList,item);
@@ -41,7 +41,7 @@ function _readFile(path,filesList,targetObj)
 
             if(targetObj["child"])
             {
-                var item = {text:file,value:obj.path}
+                var item = {text:file,value:obj.path,isFile:1}
                 targetObj["child"].push(item);
             }
             else

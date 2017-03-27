@@ -4,6 +4,7 @@ require("./tab.scss");
 var Redux=require("redux");
 var actions=require("../../cms/my_cms/redux/actions.js");
 var Codeeditor=require("../codeeditor/tab_codeeditor.js");
+var Fileexplorer=require("../fileexplorer/fileexplorer.js");
 var reactRouter=require('react-router');
 
 var connect=reactRedux.connect,provider =reactRedux.Provider,Link=reactRouter.Link;
@@ -43,6 +44,7 @@ var TabComtent = React.createClass({
                 </div>
 
                 <Codeeditor  opt={codeopt} isShow={currentTabIndex==0&&true}  ></Codeeditor>
+                <Fileexplorer  opt={codeopt} isShow={currentTabIndex==1&&true}  ></Fileexplorer>
 
 
 

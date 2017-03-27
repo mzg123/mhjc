@@ -1,0 +1,27 @@
+@import "../../common/scss/base.scss";
+
+.fileexplorer{
+  ul{
+    li{
+      float: left;
+      margin:20px;
+      .thumbnail{
+        width:128px;
+        height:128px;
+        background-size: contain;
+      }
+      .folder{
+        background: url('/image/file.png') center no-repeat;
+      }
+      .txt{
+        background: url('/image/txt.png') center no-repeat;
+      }
+      .pic{
+        background: url('/image/pic.png') center no-repeat;
+      }
+      .name{
+        text-align: center;
+      }
+    }
+  }
+}
