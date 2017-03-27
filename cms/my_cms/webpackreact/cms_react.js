@@ -33,7 +33,6 @@ function d(e,ee,eee,w){
 //    , document.body);
 ReactDOM.render(
     <Provider store={reduxStore}>
-
           <Mycms></Mycms>
     </Provider>
     , document.body);

@@ -6,9 +6,10 @@ var actions=require("../../redux/actions.js");
 var Tree=require("../../../../react/tree_react/my_cms_tree.js");
 var Nav=require("../../../../react/nav/my_cms_nav.js");
 var Codeeditor=require("../../../../react/codeeditor/codeeditor.js");
+var Tab=require("../../../../react/tabs/my_cms_tabComtent.js");
 
 var connect=reactRedux.connect,provider =reactRedux.Provider;
-
+//<Codeeditor opt={codeopt}></Codeeditor> <Tab></Tab>
 class my_cms extends React.Component{
     constructor (){
         super()
@@ -26,7 +27,9 @@ class my_cms extends React.Component{
                     <div  className="left" id="left">
                         <Tree></Tree>
                     </div>
-                    <Codeeditor opt={codeopt}></Codeeditor>
+                    <div  className="coment" >
+                        <Tab></Tab>
+                    </div>
                 </div>
             </div>
 

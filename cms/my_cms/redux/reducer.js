@@ -42,6 +42,7 @@ module.exports={
 
         switch (action.type) {
             case "getFileInfo":
+
                 action.treeItems&&(state.treeItems=action.treeItems);
                 return deepCopy(state);
            case "getFileContent":
@@ -74,7 +75,7 @@ module.exports={
             ,data:[
                 {
                     tag:"静态资源"
-                    ,href:"/static"
+                    ,href:"1"
 
                 }
                 //, {
@@ -123,7 +124,7 @@ module.exports={
                 //}
                 ,{
                     tag:"模板"
-                    ,href:"/templet"
+                    ,href:"2"
 
                 }
             ]
@@ -281,24 +282,14 @@ module.exports={
             currentTabIndex:0
             ,data:[
                 {
-                    tag:"已充值"
+                    tag:"代码编辑"
                     ,href:"/"
                     ,tabIndex:0
                 }
                 ,{
-                    tag:"已充值"
+                    tag:"文件管理"
                     ,href:"/"
                     ,tabIndex:1
-                }
-                ,{
-                    tag:"充值失败"
-                    ,href:"/"
-                    ,tabIndex:2
-                }
-                ,{
-                    tag:"未处理"
-                    ,href:"/"
-                    ,tabIndex:3
                 }
             ]
         }}));

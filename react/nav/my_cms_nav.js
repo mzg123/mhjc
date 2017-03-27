@@ -2,11 +2,10 @@ var React = require('react');
 var reactRedux = require('react-redux')
 require("./my_cms_nav.css");
 var Redux=require("redux");
-var actions=require("../redux/actions.js");
+var actions=require("../../cms/my_cms/redux/actions.js");
 var assist=require("../redux/assist.js");
 
-var Modal=require("../../react/modal/modal.js");
-var Modal2=require("../../react/modal/modal.js");
+
 
 import { Link } from 'react-router';
 var connect=reactRedux.connect,provider =reactRedux.Provider;
@@ -15,54 +14,7 @@ var connect=reactRedux.connect,provider =reactRedux.Provider;
     constructor(){
         super();
     }
-     getInitialState(){
-         return {
-             navData:{
-                 type:"hor"
-                 ,currentMenu:""
-                 ,data:[
-                     {
-                       tag:"首页"
-                       ,href:"/"
 
-                     }
-                     , {
-                         tag:"财富管理"
-                         ,MenuEc:"leave"
-                         ,child:[
-                             {
-                                 tag:"p2p债券"
-                                 ,href:"/m"
-                             }
-                             ,{
-                                 tag:"p2p债券"
-                                 ,href:"/m"
-                             }
-                         ]
-                     }
-                     , {
-                         tag:"债权转让"
-                         ,MenuEc:"leave"
-                         ,child:[
-                             {
-                                 tag:"p2p债券"
-                                 ,href:"/m"
-                             }
-                             ,{
-                                 tag:"p2p债券"
-                                 ,href:"/m"
-                             }
-                         ]
-                     }
-                     ,{
-                         tag:"银谷课堂"
-                         ,href:"/"
-
-                     }
-                 ]
-             }
-         }
-     }
      createNav(data,props){
           var self=this;
          //{self.createNav(item.child,props)}
@@ -72,7 +24,8 @@ var connect=reactRedux.connect,provider =reactRedux.Provider;
 
                  return (
                   <li data-name={item.tag} props={props} onMouseLeave={self.mouseLeave.bind(self)} onMouseEnter={self.mouseEnter.bind(self)}>
-                         <Link to={item.href}>{item.tag}</Link>
+                         <a  onClick={self.onClick.bind(self,item.href)}>{item.tag}</a>
+
                          <ul data-name={item.tag} className={c}>
                          {
                              item.child.map(function(itemc,indexc){
@@ -85,12 +38,18 @@ var connect=reactRedux.connect,provider =reactRedux.Provider;
              }else{
 
                 return(
-                    <li ><Link to={item.href}>{item.tag}</Link></li>
+                    <li >
+                        <a  onClick={self.onClick.bind(self,item.href)}>{item.tag}</a>
+                    </li>
                 )
 
 
              }
          })
+     }
+     onClick(pathType,evt){
+
+         this.props.clickItem(pathType);
      }
      mouseEnter(evt){
 
@@ -102,8 +61,6 @@ var connect=reactRedux.connect,provider =reactRedux.Provider;
     render(){
         let navData=this.props.navData;
         let r=this.createNav(navData.data,this.props.changeMenu);
-       var modal1=this.props.modal1;
-       var modal2=this.props.modal2;
         return (
             <div className="con">
                     <div id="nav" className="nav">
@@ -112,8 +69,6 @@ var connect=reactRedux.connect,provider =reactRedux.Provider;
                         </ul>
                     </div>
                 {this.props.children}
-                <Modal option={ modal1 }   />
-                <Modal2 option={ modal2 }     />
             </div>
         )
     }
@@ -123,10 +78,7 @@ const mapStateToProps =function (state) {
     return {
       navData:state.navCounter.navData,
        currentMenuEc:state.navCounter.navData.currentMenuEc
-        ,modal1:state.navCounter.navData.modal_1_option
-        ,modalState1:state.navCounter.navData.modal_1_option.modalState
-        ,modalState2:state.navCounter.navData.modal_2_option.modalState
-        ,modal2:state.navCounter.navData.modal_2_option
+
     }
 }
 
@@ -135,7 +87,9 @@ const mapDispatchToProps = function(dispatch ,ownProps) {
         changeMenu: function(ty,tag){
              dispatch({type:ty,tag:tag});
         }
-
+        ,clickItem:function(pathType){
+            dispatch(actions.getFileInfo(pathType));
+        }
 
     }
 }

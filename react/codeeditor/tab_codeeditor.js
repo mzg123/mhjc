@@ -18,8 +18,9 @@ class codeeditor extends React.Component{
 }
     render(){
         let selectFile=this.props.opt.selectFile,saveFile=this.saveFileContent;
+
         return (
-            <div id="codeeditor" style={{width:'100%',height:'100%'}}>
+            <div id="codeeditor" className={this.props.isShow?"":" display_n"} style={{width:'100%',height:'100%'}}>
                 <button data-fileName={selectFile} onClick={saveFile.bind(this,selectFile)} id="save">保存</button>
                 <textarea  id="container" name="content" >
                 </textarea >

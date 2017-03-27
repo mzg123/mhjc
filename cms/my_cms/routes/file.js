@@ -8,8 +8,11 @@ var writeFile=require('../server/fileServer').writeFile;
 
 /* GET users listing. */
 router.get('/getFileTree', function(req, res, next) {
+  var ph=config.staticPath;
 
-  res.send(getFileTree({text:'static',path:config.staticPath}));
+  (req.query.pathType==1||req.query.pathType=="1")?"":
+      (req.query.pathType==2|req.query.pathType=="2")?ph=config.ejsPath:"";
+  res.send(getFileTree({text:'static',path:ph}));
 });
 
 router.get('/getFileContent', function(req, res, next) {

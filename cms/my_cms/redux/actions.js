@@ -4,14 +4,15 @@
 //var tabcontent4 = require('../data/tabcontent4.json');
 
 module.exports={
-    getFileInfo:function(){
+    getFileInfo:function(pathType){
         return function (dispatch){
             $.ajax({
                 type: "get",
                 url: "http://10.0.130.129:3000/file/getFileTree",
-                data: {},
+                data: {pathType:pathType},
                 dataType: "json",
                 success: function (data) {
+                    window.editor&& window.editor.setValue('');
                     dispatch({type:"getFileInfo",treeItems:[data]});
                 },
                 exception: function (data) {
@@ -21,7 +22,7 @@ module.exports={
             });
         }
     },
-    getFileContent:function(path){
+    getFileContent:function(path,type){
     return function (dispatch){
         $.ajax({
             type: "get",
@@ -29,7 +30,7 @@ module.exports={
             data: {path:path},
             dataType: "json",
             success: function (data) {
-                editor.setValue(data.filedata);
+                window.editor&& window.editor.setValue(data.filedata);
                 dispatch({type:"getFileContent",selectFile:path});
 
             },

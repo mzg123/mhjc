@@ -296,6 +296,7 @@ body{
     width:79%;
     display: inline-block;
     height: 100%;
+    overflow-y: auto;
 }
 #container{
     height: 100%;

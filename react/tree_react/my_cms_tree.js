@@ -103,17 +103,17 @@ var Tree = React.createClass({
     componentDidMount() {
 
     this.props.getFileInfo();
-
         //this.props.router.setRouteLeaveHook(
         //    this.props.route,
         //    this.routerWillLeave
         //)
     },
     routerWillLeave(nextLocation) {
+      //  alert(3);
         // 返回 false 会继续停留当前页面，
         // 否则，返回一个字符串，会显示给用户，让其自己决定
-        if (true)
-            return '确认要离开？';
+        //if (true)
+        //    return '确认要离开？';
     },
     render: function () {
         var d=this.props.itemData;
@@ -154,7 +154,7 @@ const mapDispatchToProps = function(dispatch ,ownProps) {
     return {
         onItemClick: function(path){
             //dispatch(actions.getFileInfo());
-            dispatch(actions.getFileContent(path));
+            dispatch(actions.getFileContent(path,1));
 
         }
         ,getFileInfo:function(){
