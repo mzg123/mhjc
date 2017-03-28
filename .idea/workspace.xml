@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5736c30a-62bb-4f8b-9f9d-ace8984654b1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/react/contextmenu/my_cms_contextmenu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/react/contextmenu/my_cms_contextmenu.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms/my_cms/redux/actions.js" afterPath="$PROJECT_DIR$/cms/my_cms/redux/actions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/react/fileexplorer/fileexplorer.js" afterPath="$PROJECT_DIR$/react/fileexplorer/fileexplorer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/react/fileexplorer/fileexplorer.scss" afterPath="$PROJECT_DIR$/react/fileexplorer/fileexplorer.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms/my_cms/webpackreact/my_cms/my_cms.js" afterPath="$PROJECT_DIR$/cms/my_cms/webpackreact/my_cms/my_cms.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/react/tabs/my_cms_tabComtent.js" afterPath="$PROJECT_DIR$/react/tabs/my_cms_tabComtent.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/react/tree_react/my_cms_tree.js" afterPath="$PROJECT_DIR$/react/tree_react/my_cms_tree.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms/my_cms/redux/reducer.js" afterPath="$PROJECT_DIR$/cms/my_cms/redux/reducer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms/my_cms/redux/store.js" afterPath="$PROJECT_DIR$/cms/my_cms/redux/store.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/react/contextmenu/my_cms_contextmenu.scss" afterPath="$PROJECT_DIR$/react/contextmenu/my_cms_contextmenu.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms/my_cms/dist/css/tree.css" afterPath="$PROJECT_DIR$/cms/my_cms/dist/css/tree.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms/my_cms/dist/js/tree.js" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/tree.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="hjc.iws" />
@@ -100,8 +90,8 @@
       <file leaf-file-name="my_cms_contextmenu.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/react/contextmenu/my_cms_contextmenu.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3372781" vertical-offset="0" max-vertical-offset="676">
-              <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.22320117" vertical-offset="0" max-vertical-offset="681">
+              <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -1012,12 +1002,12 @@
       <workItem from="1490091755211" duration="24554000" />
       <workItem from="1490177628297" duration="45621000" />
       <workItem from="1490347236817" duration="3212000" />
-      <workItem from="1490576027011" duration="55114000" />
+      <workItem from="1490576027011" duration="55544000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="605661000" />
+    <option name="totallyTimeSpent" value="606091000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1054,7 +1044,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18100558" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17541899" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -1539,8 +1529,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/react/contextmenu/my_cms_contextmenu.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3372781" vertical-offset="0" max-vertical-offset="676">
-          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.22320117" vertical-offset="0" max-vertical-offset="681">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
           <folding />
         </state>
       </provider>

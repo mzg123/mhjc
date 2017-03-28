@@ -6,11 +6,15 @@
   top:0;
 
   display: none;
-  background-color: white;
+  background-color:#e0e0e0;
   ul{
     li{
       display: block;
       float:none!important;
+      &:hover{
+        cursor: pointer;
+        color:#0000ff;
+      }
     }
   }
 }
