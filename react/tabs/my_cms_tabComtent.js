@@ -34,7 +34,7 @@ var TabComtent = React.createClass({
                 return <div onClick={click.bind(this,item.tabIndex)}  className="tab">{item.tag}</div>
             }
         })
-        let codeopt={selectFile:this.props.selectFile};
+        let codeopt={selectFile:this.props.opt.selectFile};
 
 
         return (
@@ -42,12 +42,8 @@ var TabComtent = React.createClass({
                 <div className="tabs">
                     {tabs}
                 </div>
-
                 <Codeeditor  opt={codeopt} isShow={currentTabIndex==0&&true}  ></Codeeditor>
                 <Fileexplorer  opt={codeopt} isShow={currentTabIndex==1&&true}  ></Fileexplorer>
-
-
-
             </div>
 
 

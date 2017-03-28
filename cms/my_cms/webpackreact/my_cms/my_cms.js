@@ -28,7 +28,7 @@ class my_cms extends React.Component{
                         <Tree></Tree>
                     </div>
                     <div  className="coment" >
-                        <Tab></Tab>
+                        <Tab opt={codeopt}></Tab>
                     </div>
                 </div>
             </div>

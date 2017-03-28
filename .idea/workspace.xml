@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5736c30a-62bb-4f8b-9f9d-ace8984654b1" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/react/contextmenu/my_cms_contextmenu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/react/contextmenu/my_cms_contextmenu.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms/my_cms/redux/actions.js" afterPath="$PROJECT_DIR$/cms/my_cms/redux/actions.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/react/fileexplorer/fileexplorer.js" afterPath="$PROJECT_DIR$/react/fileexplorer/fileexplorer.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/react/fileexplorer/fileexplorer.scss" afterPath="$PROJECT_DIR$/react/fileexplorer/fileexplorer.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms/my_cms/webpackreact/my_cms/my_cms.js" afterPath="$PROJECT_DIR$/cms/my_cms/webpackreact/my_cms/my_cms.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/react/tabs/my_cms_tabComtent.js" afterPath="$PROJECT_DIR$/react/tabs/my_cms_tabComtent.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/react/tree_react/my_cms_tree.js" afterPath="$PROJECT_DIR$/react/tree_react/my_cms_tree.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms/my_cms/redux/reducer.js" afterPath="$PROJECT_DIR$/cms/my_cms/redux/reducer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms/my_cms/redux/store.js" afterPath="$PROJECT_DIR$/cms/my_cms/redux/store.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms/my_cms/dist/css/tree.css" afterPath="$PROJECT_DIR$/cms/my_cms/dist/css/tree.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms/my_cms/dist/js/tree.js" afterPath="$PROJECT_DIR$/cms/my_cms/dist/js/tree.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -36,18 +42,8 @@
       <file leaf-file-name="my_cms_tree.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/react/tree_react/my_cms_tree.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.033334" vertical-offset="2085" max-vertical-offset="2717">
-              <caret line="124" column="53" selection-start-line="124" selection-start-column="24" selection-end-line="124" selection-end-column="62" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cms/my_cms/views/index.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.44" vertical-offset="84" max-vertical-offset="741">
-              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+            <state vertical-scroll-proportion="-76.63333" vertical-offset="0" max-vertical-offset="2660">
+              <caret line="121" column="56" selection-start-line="121" selection-start-column="52" selection-end-line="121" selection-end-column="56" />
               <folding />
             </state>
           </provider>
@@ -56,9 +52,22 @@
       <file leaf-file-name="actions.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cms/my_cms/redux/actions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.0666666" vertical-offset="0" max-vertical-offset="2964">
-              <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+            <state vertical-scroll-proportion="-10.766666" vertical-offset="627" max-vertical-offset="2964">
+              <caret line="53" column="43" selection-start-line="53" selection-start-column="43" selection-end-line="53" selection-end-column="43" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fileexplorer.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/react/fileexplorer/fileexplorer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.1666667" vertical-offset="0" max-vertical-offset="2052">
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding>
+                <element signature="n#!!block;n#itemClick#0;n#!!block;n#createSingleF#0;n#fileexplorer#0" expanded="false" />
+                <element signature="n#!!block;n#itemDbClick#0;n#!!block;n#createSingleF#0;n#fileexplorer#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -66,22 +75,33 @@
       <file leaf-file-name="reducer.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cms/my_cms/redux/reducer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="25.333334" vertical-offset="855" max-vertical-offset="2622">
-              <caret line="5" column="20" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="456" max-vertical-offset="2698">
+              <caret line="56" column="23" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="23" />
               <folding>
-                <element signature="e#2416#4604#0" expanded="false" />
-                <element signature="e#4753#9765#0" expanded="false" />
-                <element signature="e#10978#12239#0" expanded="false" />
+                <element signature="e#1069#1269#0" expanded="false" />
+                <element signature="e#2820#5008#0" expanded="false" />
+                <element signature="e#5157#10169#0" expanded="false" />
+                <element signature="e#11382#12643#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fileexplorer.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/react/fileexplorer/fileexplorer.js">
+      <file leaf-file-name="my_cms_contextmenu.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/react/contextmenu/my_cms_contextmenu.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6392405" vertical-offset="356" max-vertical-offset="1957">
-              <caret line="40" column="42" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="228" max-vertical-offset="1140">
+              <caret line="22" column="161" selection-start-line="22" selection-start-column="161" selection-end-line="22" selection-end-column="161" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="my_cms_contextmenu.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/react/contextmenu/my_cms_contextmenu.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.3372781" vertical-offset="0" max-vertical-offset="676">
+              <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -101,37 +121,7 @@
         <entry file="file://$PROJECT_DIR$/react/fileexplorer/fileexplorer.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-18.321428" vertical-offset="0" max-vertical-offset="760">
-              <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="my_cms_tabComtent.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/react/tabs/my_cms_tabComtent.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1009" max-vertical-offset="1767">
-              <caret line="62" column="65" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="65" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tab_codeeditor.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/react/codeeditor/tab_codeeditor.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="1083">
-              <caret line="22" column="61" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="61" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="codeeditor.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/react/codeeditor/codeeditor.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1064">
-              <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+              <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -145,9 +135,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/cms/yg_cms/app.js" />
-        <option value="$PROJECT_DIR$/cms/yg_cms/routes/index.js" />
-        <option value="$PROJECT_DIR$/cms/yg_cms/dist/html/index.html" />
         <option value="$PROJECT_DIR$/react/tree_react/yg_cms_tree.js" />
         <option value="$PROJECT_DIR$/react/tree_react/yg_cms_tree.css" />
         <option value="$PROJECT_DIR$/cms/yg_cms/views/index.ejs" />
@@ -174,28 +161,31 @@
         <option value="$PROJECT_DIR$/cms/my_cms/webpackreact/my_cms/cm_cms.css" />
         <option value="$PROJECT_DIR$/react/nav/nav.js" />
         <option value="$PROJECT_DIR$/webpackbuildjs/react/tree_react.js" />
-        <option value="$PROJECT_DIR$/cms/my_cms/redux/store.js" />
         <option value="$PROJECT_DIR$/cms/my_cms/webpackreact/cms_react.js" />
         <option value="$PROJECT_DIR$/react/nav/my_cms_nav.js" />
         <option value="$PROJECT_DIR$/cms/my_cms/routes/file.js" />
         <option value="$PROJECT_DIR$/cms/my_cms/config/my_cms.js" />
         <option value="$PROJECT_DIR$/react/tabs/my_cms_tab.js" />
-        <option value="$PROJECT_DIR$/cms/my_cms/webpackreact/my_cms/my_cms.js" />
         <option value="$PROJECT_DIR$/cms/my_cms/dist/css/main.css" />
         <option value="$PROJECT_DIR$/react/codeeditor/codeeditor.css" />
         <option value="$PROJECT_DIR$/react/table/table.js" />
-        <option value="$PROJECT_DIR$/react/codeeditor/tab_codeeditor.js" />
-        <option value="$PROJECT_DIR$/react/codeeditor/codeeditor.js" />
         <option value="$PROJECT_DIR$/react/tabs/tab.scss" />
-        <option value="$PROJECT_DIR$/react/tabs/my_cms_tabComtent.js" />
         <option value="$PROJECT_DIR$/cms/my_cms/views/index.ejs" />
-        <option value="$PROJECT_DIR$/cms/my_cms/redux/actions.js" />
         <option value="$PROJECT_DIR$/cms/my_cms/helper/fileHp.js" />
         <option value="$PROJECT_DIR$/cms/my_cms/server/fileServer.js" />
-        <option value="$PROJECT_DIR$/cms/my_cms/redux/reducer.js" />
-        <option value="$PROJECT_DIR$/react/fileexplorer/fileexplorer.scss" />
+        <option value="$PROJECT_DIR$/react/codeeditor/codeeditor.js" />
+        <option value="$PROJECT_DIR$/react/tabs/my_cms_tabComtent.js" />
+        <option value="$PROJECT_DIR$/cms/my_cms/webpackreact/my_cms/my_cms.js" />
+        <option value="$PROJECT_DIR$/react/codeeditor/tab_codeeditor.js" />
+        <option value="$PROJECT_DIR$/cms/my_cms/redux/actions.js" />
         <option value="$PROJECT_DIR$/react/tree_react/my_cms_tree.js" />
+        <option value="$PROJECT_DIR$/react/fileexplorer/fileexplorer.scss" />
+        <option value="$PROJECT_DIR$/react/contextmenu/contextmenu.js" />
         <option value="$PROJECT_DIR$/react/fileexplorer/fileexplorer.js" />
+        <option value="$PROJECT_DIR$/cms/my_cms/redux/reducer.js" />
+        <option value="$PROJECT_DIR$/cms/my_cms/redux/store.js" />
+        <option value="$PROJECT_DIR$/react/contextmenu/my_cms_contextmenu.js" />
+        <option value="$PROJECT_DIR$/react/contextmenu/my_cms_contextmenu.scss" />
       </list>
     </option>
   </component>
@@ -385,65 +375,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="roller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hjc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mhjc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="react" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nav" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hjc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mhjc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="react" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fileexplorer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hjc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mhjc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="react" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fileexplorer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="image" />
+              <option name="myItemId" value="contextmenu" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -502,6 +434,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="webpackreact" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hjc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mhjc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="my_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webpackreact" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="my_cms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -740,11 +698,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\mhjc\mhjc\react\contextmenu" />
       <recent name="C:\Users\Administrator\mhjc\mhjc\cms\my_cms\dist\image" />
       <recent name="C:\Users\Administrator\mhjc\mhjc\react\fileexplorer\image" />
       <recent name="C:\Users\Administrator\mhjc\mhjc\react\fileexplorer" />
       <recent name="C:\Users\Administrator\mhjc\mhjc\react\codeeditor" />
-      <recent name="C:\Users\Administrator\mhjc\mhjc\react\tabs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Administrator\hjc\vue" />
@@ -1054,12 +1012,12 @@
       <workItem from="1490091755211" duration="24554000" />
       <workItem from="1490177628297" duration="45621000" />
       <workItem from="1490347236817" duration="3212000" />
-      <workItem from="1490576027011" duration="43295000" />
+      <workItem from="1490576027011" duration="55114000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="593842000" />
+    <option name="totallyTimeSpent" value="605661000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1096,7 +1054,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22793296" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18100558" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -1168,21 +1126,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/react/redux/actions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1938">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/react/redux/reducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1" max-vertical-offset="7638">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/react/tree_react/my_cms_tree.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="291" max-vertical-offset="1064">
@@ -1304,14 +1247,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cms/my_cms/redux/store.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1140">
-          <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/react/info">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="380">
@@ -1344,14 +1279,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cms/my_cms/webpackreact/cms_react.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="950">
-          <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cms/my_cms/config/my_cms.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="171">
@@ -1368,14 +1295,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cms/my_cms/webpackreact/my_cms/my_cms.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="1235">
-          <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cms/my_cms/dist/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.2" vertical-offset="5326" max-vertical-offset="6004">
@@ -1388,22 +1307,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="494">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/react/codeeditor/codeeditor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1064">
-          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/react/codeeditor/tab_codeeditor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="1083">
-          <caret line="22" column="61" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="61" />
           <folding />
         </state>
       </provider>
@@ -1490,14 +1393,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/react/tabs/my_cms_tabComtent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1009" max-vertical-offset="1767">
-          <caret line="62" column="65" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cms/my_cms/routes/file.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.24116744" vertical-offset="71" max-vertical-offset="722">
@@ -1510,14 +1405,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5253456" vertical-offset="1368" max-vertical-offset="2033">
           <caret line="90" column="49" selection-start-line="90" selection-start-column="41" selection-end-line="90" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms/my_cms/redux/actions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.0666666" vertical-offset="0" max-vertical-offset="2964">
-          <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
           <folding />
         </state>
       </provider>
@@ -1538,18 +1425,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cms/my_cms/redux/reducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="25.333334" vertical-offset="855" max-vertical-offset="2622">
-          <caret line="5" column="20" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="20" />
-          <folding>
-            <element signature="e#2416#4604#0" expanded="false" />
-            <element signature="e#4753#9765#0" expanded="false" />
-            <element signature="e#10978#12239#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/react/codeeditor/codeeditor.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="689">
@@ -1558,26 +1433,114 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cms/my_cms/webpackreact/my_cms/my_cms.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="1235">
+          <caret line="30" column="32" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react/tabs/my_cms_tabComtent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24413146" vertical-offset="528" max-vertical-offset="1691">
+          <caret line="36" column="19" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms/my_cms/webpackreact/cms_react.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.57399106" vertical-offset="281" max-vertical-offset="950">
+          <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react/codeeditor/codeeditor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34080717" vertical-offset="0" max-vertical-offset="1064">
+          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react/codeeditor/tab_codeeditor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1083">
+          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms/my_cms/redux/actions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.766666" vertical-offset="627" max-vertical-offset="2964">
+          <caret line="53" column="43" selection-start-line="53" selection-start-column="43" selection-end-line="53" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/react/fileexplorer/fileexplorer.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-18.321428" vertical-offset="0" max-vertical-offset="760">
-          <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/react/tree_react/my_cms_tree.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.033334" vertical-offset="2085" max-vertical-offset="2717">
-          <caret line="124" column="53" selection-start-line="124" selection-start-column="24" selection-end-line="124" selection-end-column="62" />
+        <state vertical-scroll-proportion="-76.63333" vertical-offset="0" max-vertical-offset="2660">
+          <caret line="121" column="56" selection-start-line="121" selection-start-column="52" selection-end-line="121" selection-end-column="56" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/react/fileexplorer/fileexplorer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6392405" vertical-offset="356" max-vertical-offset="1957">
-          <caret line="40" column="42" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
+        <state vertical-scroll-proportion="-3.1666667" vertical-offset="0" max-vertical-offset="2052">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!block;n#itemClick#0;n#!!block;n#createSingleF#0;n#fileexplorer#0" expanded="false" />
+            <element signature="n#!!block;n#itemDbClick#0;n#!!block;n#createSingleF#0;n#fileexplorer#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms/my_cms/redux/store.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.52243125" vertical-offset="171" max-vertical-offset="1178">
+          <caret line="28" column="102" selection-start-line="28" selection-start-column="102" selection-end-line="28" selection-end-column="102" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms/my_cms/redux/reducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="456" max-vertical-offset="2698">
+          <caret line="56" column="23" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="23" />
+          <folding>
+            <element signature="e#1069#1269#0" expanded="false" />
+            <element signature="e#2820#5008#0" expanded="false" />
+            <element signature="e#5157#10169#0" expanded="false" />
+            <element signature="e#11382#12643#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react/contextmenu/my_cms_contextmenu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="228" max-vertical-offset="1140">
+          <caret line="22" column="161" selection-start-line="22" selection-start-column="161" selection-end-line="22" selection-end-column="161" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react/contextmenu/my_cms_contextmenu.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3372781" vertical-offset="0" max-vertical-offset="676">
+          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
           <folding />
         </state>
       </provider>

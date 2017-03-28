@@ -4,7 +4,7 @@
 //var tabcontent4 = require('../data/tabcontent4.json');
 
 module.exports={
-    getFileInfo:function(pathType){
+    getFileInfo:function(pathType,issave){
         return function (dispatch){
             $.ajax({
                 type: "get",
@@ -12,7 +12,7 @@ module.exports={
                 data: {pathType:pathType},
                 dataType: "json",
                 success: function (data) {
-                    window.editor&& window.editor.setValue('');
+                    !issave&& window.editor&&window.editor.setValue('');
                     dispatch({type:"getFileInfo",treeItems:[data]});
                 },
                 exception: function (data) {
@@ -51,7 +51,7 @@ module.exports={
             //data: {fileData: window.editor.getValue(),fileName:"D:/DevCode-Git/yg_online/web/static/html/active/mzg.html"},
             dataType: "json",
             success: function (data) {
-                dispatch(getFileInfo());
+                dispatch(getFileInfo(1,true));
                 alert("success");
             },
             exception: function (data) {

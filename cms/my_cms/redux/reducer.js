@@ -5,6 +5,7 @@ var inits=function initState(){
         selectFile:"",
         selectFolder:{},
         tab:{tabType:0},//0表示代码编辑 1表示文件管理
+        disPlayInfo:{display:'none',left:0,top:0},
         treeItems:[
 
         ]
@@ -51,6 +52,17 @@ module.exports={
                 return deepCopy(state);
             default:
                 return  state;
+        }
+    }
+    ,contextmenuCounter:function(state , action) {
+        state || (state = inits());
+        switch (action.type) {
+            case "showMenu":
+                state.disPlayInfo = {display: action.display, left: action.left, top: action.top}
+                return deepCopy(state);
+            default:
+
+                return state;
         }
     }
 ,treeCounter:function (state , action) {

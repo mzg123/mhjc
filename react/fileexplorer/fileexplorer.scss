@@ -24,8 +24,8 @@
       .name{
         text-align: center;
         width:128px;
-        word-wrap: break-word;
-        word-break:break-all;
+        overflow:hidden;
+        text-overflow : ellipsis
       }
     }
   }

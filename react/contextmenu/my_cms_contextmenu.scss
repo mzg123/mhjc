@@ -1,0 +1,16 @@
+@import "../../common/scss/base.scss";
+
+.contextmenu{
+  position: fixed;
+  left:0;
+  top:0;
+
+  display: none;
+  background-color: white;
+  ul{
+    li{
+      display: block;
+      float:none!important;
+    }
+  }
+}

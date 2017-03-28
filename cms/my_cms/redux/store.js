@@ -6,6 +6,7 @@ var combineReducers=redux.combineReducers,createStore=redux.createStore,applyMid
     counter=reducer.counter,treeCounter=reducer.treeCounter,
     navCounter=reducer.navCounter,
     tabCounter=reducer.tabCounter,
+    contextmenuCounter=reducer.contextmenuCounter,
     codeEditorCounter=reducer.codeEditorCounter,
     formCounter=reducer.formCounter,
     initState=reducer.initState;
@@ -24,7 +25,8 @@ var combineReducers=redux.combineReducers,createStore=redux.createStore,applyMid
 
 // 创建 Redux store 来存放应用的状态。
 // API 是 { subscribe, dispatch, getState }。
-var reducer = combineReducers({ counter:counter,treeCounter:treeCounter,navCounter:navCounter,tabCounter:tabCounter,formCounter:formCounter,codeEditorCounter:codeEditorCounter});
+var reducer = combineReducers({ counter:counter,treeCounter:treeCounter,navCounter:navCounter,tabCounter:tabCounter
+    ,formCounter:formCounter,codeEditorCounter:codeEditorCounter,contextmenuCounter:contextmenuCounter});
 var store = createStore(reducer,applyMiddleware(thunkMiddleware));
 
 store.initState=initState;

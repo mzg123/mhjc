@@ -3,6 +3,7 @@ var reactRedux = require('react-redux')
 require("./fileexplorer.scss");
 var Redux=require("redux");
 var actions=require("../../cms/my_cms/redux/actions.js");
+var ContextMenu=require("../contextmenu/my_cms_contextmenu.js");
 
 var connect=reactRedux.connect,provider =reactRedux.Provider;
 
@@ -31,17 +32,25 @@ class fileexplorer extends React.Component{
     }
 
     createSingleF(item,fn,props){
-
+      function onContextMenu(e){
+          props.menuClick({left:e.clientX,top:e.clientY});
+         e.preventDefault();
+      }
       function  itemClick(e){
           $(e.target).parent().parent().find(">li").removeClass('selected');
           $(e.target).parent().addClass('selected');
         }
         function itemDbClick(v,e){
-             props.folderClick(v);
-            $('#tree [data-path="'+v+'"]').parent().children("ul").toggle(100);
+             props.folderClick(v,$(e.target).parent().attr("data-isfile"));
+            var ul=$('#tree [data-path="'+v+'"]').parent().children("ul");
+            if( ul.children().length>0){
+                ul.toggle(100);
+                var t=ul.parent();
+                t.hasClass("closed")?t.removeClass("closed").addClass("expand"):t.removeClass("expand").addClass("closed");
+            }
         }
         var c="thumbnail "+fn(item.value.split('.')[1]);
-        return  (<li onDoubleClick={itemDbClick.bind(this,item.value)}  onClick={itemClick.bind(this)} key={item.text}>
+        return  (<li onContextMenu={onContextMenu.bind(this)} onDoubleClick={itemDbClick.bind(this,item.value)}  data-isfile={item.isFile}  onClick={itemClick.bind(this)} key={item.text}>
             <div className={c}></div>
             <div className="name">{item.text}</div>
         </li>)
@@ -68,6 +77,7 @@ class fileexplorer extends React.Component{
                  <ul>
                  {list}
                  </ul>
+                <ContextMenu></ContextMenu>
             </div>
         )
     }
@@ -84,8 +94,13 @@ const mapDispatchToProps = function(dispatch ,ownProps) {
         saveFile:function(opt){
             dispatch(actions.saveFileContent(opt));
         }
-        ,folderClick:function(path){
+        ,folderClick:function(path,isFile){
+            console.log(path,isFile);
             dispatch({type:"showFolder",path:path});
+        }
+        ,menuClick:function(opt){
+            console.log(opt,908978);
+            dispatch({type:'showMenu',display:'block',left:opt.left,top:opt.top});
         }
     }
 }

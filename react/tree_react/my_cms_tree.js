@@ -37,7 +37,7 @@ var Tree = React.createClass({
 
             if(item.child){
 
-                return(<li className={lic} >
+                return(<li className={lic} key={item.value}>
                     <a  data-path={item.value}  onClick= {itemClick.bind(this)} >{item.text}</a>
                     <ul  className="items position_r "  style={{display:'none'}}>
                  {self(item.child,itemClick)}
@@ -45,17 +45,14 @@ var Tree = React.createClass({
                 </li>)
             }
             else{
-                return (<li className={lic}>
-                    <a id={item.text} data-path={item.value} data-isFile={item.isFile}    onClick= {itemClick.bind(this)}>{item.text}</a>
+                return (<li className={lic} key={item.value}>
+                    <a id={item.text} data-path={item.value} data-isfile={item.isFile}      onClick= {itemClick.bind(this)}>{item.text}</a>
                 </li>)
             }
         })
     },
     itemClick:function(e){
-        console.log($(e.target));
-        //var ul=$(e.target).parent().find("ul");
         var ul=$(e.target).parent().children("ul");
-
         if( ul.children().length>0){
             ul.toggle(100);
             var t=ul.parent();
@@ -63,7 +60,7 @@ var Tree = React.createClass({
 
         }else{
         }
-        this.props.onItemClick($(e.target).attr("data-path"),$(e.target).attr("data-isFile"),this.props.tabType);
+        this.props.onItemClick($(e.target).attr("data-path"),$(e.target).attr("data-isfile"),this.props.tabType);
     },
 
     componentDidMount() {
