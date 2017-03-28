@@ -3,6 +3,7 @@ var inits=function initState(){
     return {
         state:1,
         selectFile:"",
+        selectFolder:{},
         tab:{tabType:0},//0表示代码编辑 1表示文件管理
         treeItems:[
 
@@ -27,6 +28,20 @@ function deepCopy(p, c) {
     }
     return c;
 }
+function getSelectFolder(path,treeItems){
+
+    var tempstate=treeItems[0];
+    path.split('/').forEach(function(t){
+        if(tempstate.child){
+            tempstate.child.forEach(function(c){
+                c.text==t&&(tempstate=c);
+            })
+        }else{
+            tempstate.value==t&&(tempstate=tempstate.child);
+        }
+    })
+    return tempstate;
+}
 module.exports={
     initState:inits
     ,codeEditorCounter:function(state , action){
@@ -44,13 +59,8 @@ module.exports={
         switch (action.type) {
 
             case "showFolder":
-                var temp=null;
-                action.path.split('/').forEach(function(t){
-                    temp?(temp=temp[t]):temp=state.treeItems[t]
-                })
-                 console.log(temp,9087);
-                console.log(state.treeItems);
-                //state.treeItems[]
+
+                state.selectFolder=getSelectFolder(action.path,state.treeItems);
                 return deepCopy(state);
             case "getFileInfo":
                 action.treeItems&&(state.treeItems=action.treeItems);

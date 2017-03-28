@@ -5,10 +5,12 @@
     li{
       float: left;
       margin:20px;
+      border:1px solid transparent;
       .thumbnail{
         width:128px;
         height:128px;
         background-size: contain;
+
       }
       .folder{
         background: url('/image/file.png') center no-repeat;
@@ -21,7 +23,13 @@
       }
       .name{
         text-align: center;
+        width:128px;
+        word-wrap: break-word;
+        word-break:break-all;
       }
     }
+  }
+  .selected{
+    border:1px solid #0000C0;
   }
 }

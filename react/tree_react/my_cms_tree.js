@@ -25,43 +25,7 @@ var connect=reactRedux.connect,provider =reactRedux.Provider,Link=reactRouter.Li
 //componentWillUnmount()
 //component.forceUpdate()
 
-var TreeItem=React.createClass({
-    componentDidMount:function(e){
-        alert("finish");
-    },
 
-    render:function(){
-        var d=this.props.itemData.child;
-        var itemClick=this.props.itemClick;
-        var items= d.map(function(item,index){
-            return (
-                <li onClick={itemClick} className="position_r item">{item.text}</li>
-            );
-        });
-        return (
-            <li className="position_r item">
-
-                <a onClick={itemClick} className="closed">{this.props.itemData.text}</a>
-                <ul  className="items position_r">
-                {items}
-                </ul>
-            </li>
-        );
-    }
-})
-
-
-var Content=React.createClass({
-    render:function(){
-        return(
-            <div id="content">
-                <textarea value={this.props.content}>
-
-                </textarea>
-            </div>
-        );
-    }
-})
 
 var Tree = React.createClass({
 
@@ -88,6 +52,7 @@ var Tree = React.createClass({
         })
     },
     itemClick:function(e){
+        console.log($(e.target));
         //var ul=$(e.target).parent().find("ul");
         var ul=$(e.target).parent().children("ul");
 
@@ -148,6 +113,7 @@ const mapStateToProps =function (state) {
         ,content:state.treeCounter.content
         ,currentcontent:state.treeCounter.currenttxt
         ,tabType:state.tabCounter.tab.tabType
+
     }
 }
 
@@ -157,7 +123,6 @@ const mapDispatchToProps = function(dispatch ,ownProps) {
 
             tabType==0&&isFile&&dispatch(actions.getFileContent(path,1));
             tabType==1&&dispatch({type:"showFolder",path:path});
-
         }
         ,getFileInfo:function(){
             dispatch(actions.getFileInfo({pathType:1}));
