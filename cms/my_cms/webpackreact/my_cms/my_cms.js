@@ -15,11 +15,14 @@ class my_cms extends React.Component{
         super()
     }
 
+    menuClick(){
+        this.props.menuClick('none',0,0);
+    }
     render(){
 
-        let codeopt={selectFile:this.props.selectFile};
+        let codeopt={selectFile:this.props.selectFile},menuClick=this.menuClick;;
         return(
-            <div className="home">
+            <div onClick={menuClick.bind(this)} className="home">
                 <div className="nav" id="nav">
                     <Nav></Nav>
                 </div>
@@ -32,7 +35,6 @@ class my_cms extends React.Component{
                     </div>
                 </div>
             </div>
-
         )
     }
 }
@@ -46,9 +48,9 @@ const mapStateToProps =function (state) {
 
 const mapDispatchToProps = function(dispatch ,ownProps) {
     return {
-
-
-
+        menuClick:function(display,left,top){
+            dispatch({type:'showMenu',display:display,left:left,top:top});
+        }
     }
 }
 

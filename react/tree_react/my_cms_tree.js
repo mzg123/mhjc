@@ -65,6 +65,7 @@ var Tree = React.createClass({
 
     componentDidMount() {
     this.props.getFileInfo();
+
         //this.props.router.setRouteLeaveHook(
         //    this.props.route,
         //    this.routerWillLeave
@@ -118,8 +119,10 @@ const mapDispatchToProps = function(dispatch ,ownProps) {
     return {
         onItemClick: function(path,isFile,tabType){
 
-            tabType==0&&isFile&&dispatch(actions.getFileContent(path,1));
-            tabType==1&&dispatch({type:"showFolder",path:path});
+            isFile&&dispatch(actions.getFileContent(path,1));
+            //tabType==0&&isFile&&dispatch(actions.getFileContent(path,1));
+            //tabType==1&&dispatch({type:"showFolder",path:path});
+            dispatch({type:"showFolder",path:path});
         }
         ,getFileInfo:function(){
             dispatch(actions.getFileInfo({pathType:1}));

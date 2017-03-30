@@ -4,6 +4,8 @@ var inits=function initState(){
         state:1,
         selectFile:"",
         selectFolder:{},
+        rightMenu:{},
+        dbFile:{id:"dbFile",modalState:0},//双击文件时显示
         tab:{tabType:0},//0表示代码编辑 1表示文件管理
         disPlayInfo:{display:'none',left:0,top:0},
         treeItems:[
@@ -58,7 +60,7 @@ module.exports={
         state || (state = inits());
         switch (action.type) {
             case "showMenu":
-                state.disPlayInfo = {display: action.display, left: action.left, top: action.top}
+                state.rightMenu = {display: action.display, left: action.left, top: action.top,isFile:action.isFile,path:action.path}
                 return deepCopy(state);
             default:
 
@@ -69,13 +71,19 @@ module.exports={
     state||(state=inits());
 
         switch (action.type) {
-
+            case "close":
+                state.dbFile.modalState=0;
+                return deepCopy(state)
+            case "dbFile":
+                state.dbFile=action.option;
+                state.dbFile.modalState=1;
+                return deepCopy(state)
             case "showFolder":
-
-                state.selectFolder=getSelectFolder(action.path,state.treeItems);
+                action.path&&(state.selectFolder=getSelectFolder(action.path,state.treeItems));
                 return deepCopy(state);
             case "getFileInfo":
                 action.treeItems&&(state.treeItems=action.treeItems);
+                state.selectFolder=state.treeItems[0];
                 return deepCopy(state);
            case "getFileContent":
 

@@ -1,1 +1,11 @@
 @import "../../common/scss/base.scss";
+.codeeditor{
+  overflow-y: hidden;
+  .code_tool{
+   position: absolute;
+    #container{
+      position:relative;
+      top:20px;
+    }
+  }
+}

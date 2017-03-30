@@ -38,16 +38,16 @@ var TabComtent = React.createClass({
 
 
         return (
-            <div >
-                <div className="tabs">
+
+                <div className="tabs_con" >
+                    <div className="tabs">
                     {tabs}
+                    </div>
+                    <div className="tabs_content">
+                        <Codeeditor  opt={codeopt} isShow={currentTabIndex==0&&true}  ></Codeeditor>
+                        <Fileexplorer  opt={codeopt} isShow={currentTabIndex==1&&true}  ></Fileexplorer>
+                    </div>
                 </div>
-                <Codeeditor  opt={codeopt} isShow={currentTabIndex==0&&true}  ></Codeeditor>
-                <Fileexplorer  opt={codeopt} isShow={currentTabIndex==1&&true}  ></Fileexplorer>
-            </div>
-
-
-
         );
     }
 });

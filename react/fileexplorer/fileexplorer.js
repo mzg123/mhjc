@@ -4,6 +4,7 @@ require("./fileexplorer.scss");
 var Redux=require("redux");
 var actions=require("../../cms/my_cms/redux/actions.js");
 var ContextMenu=require("../contextmenu/my_cms_contextmenu.js");
+var Modal=require("../../react/modal/modal.js");
 
 var connect=reactRedux.connect,provider =reactRedux.Provider;
 
@@ -24,6 +25,7 @@ class fileexplorer extends React.Component{
             case "docx":
                 return 'txt';
             case 'jpg':
+            case 'png':
             case 'ico':
                 return 'pic';
             default :
@@ -32,15 +34,15 @@ class fileexplorer extends React.Component{
     }
 
     createSingleF(item,fn,props){
-      function onContextMenu(e){
-          props.menuClick({left:e.clientX,top:e.clientY});
+      function onContextMenu(v,e){
+          props.menuClick({left:e.clientX,top:e.clientY,isFile:$(e.target).parent().attr("data-isfile"),path:v});
          e.preventDefault();
       }
       function  itemClick(e){
           $(e.target).parent().parent().find(">li").removeClass('selected');
           $(e.target).parent().addClass('selected');
         }
-        function itemDbClick(v,e){
+      function itemDbClick(v,e){
              props.folderClick(v,$(e.target).parent().attr("data-isfile"));
             var ul=$('#tree [data-path="'+v+'"]').parent().children("ul");
             if( ul.children().length>0){
@@ -50,7 +52,7 @@ class fileexplorer extends React.Component{
             }
         }
         var c="thumbnail "+fn(item.value.split('.')[1]);
-        return  (<li onContextMenu={onContextMenu.bind(this)} onDoubleClick={itemDbClick.bind(this,item.value)}  data-isfile={item.isFile}  onClick={itemClick.bind(this)} key={item.text}>
+        return  (<li onContextMenu={onContextMenu.bind(this,item.value)} onDoubleClick={itemDbClick.bind(this,item.value)}  data-isfile={item.isFile}  onClick={itemClick.bind(this)} key={item.text}>
             <div className={c}></div>
             <div className="name">{item.text}</div>
         </li>)
@@ -69,6 +71,7 @@ class fileexplorer extends React.Component{
     }
     render(){
        var c=" fileexplorer "+(this.props.isShow?"":" display_n")
+           ,modal=this.props.modal
            ,selectFolder=this.props.selectFolder, list='';
 
         selectFolder.child&&(list=this.createFolder(selectFolder));
@@ -78,6 +81,7 @@ class fileexplorer extends React.Component{
                  {list}
                  </ul>
                 <ContextMenu></ContextMenu>
+                <Modal option={ modal }   />
             </div>
         )
     }
@@ -86,6 +90,7 @@ class fileexplorer extends React.Component{
 const mapStateToProps =function (state) {
     return {
         selectFolder:state.treeCounter.selectFolder
+        ,modal:state.treeCounter.dbFile
     }
 }
 
@@ -95,12 +100,19 @@ const mapDispatchToProps = function(dispatch ,ownProps) {
             dispatch(actions.saveFileContent(opt));
         }
         ,folderClick:function(path,isFile){
-            console.log(path,isFile);
-            dispatch({type:"showFolder",path:path});
+            if(isFile==1||isFile=="1"){
+                dispatch(actions.dbFile(path));
+            }else{
+                dispatch({type:"showFolder",path:path});
+            }
+
         }
         ,menuClick:function(opt){
-            console.log(opt,908978);
-            dispatch({type:'showMenu',display:'block',left:opt.left,top:opt.top});
+            dispatch({type:'showMenu',display:'block',left:opt.left,top:opt.top,isFile:opt.isFile,path:opt.path});
+
+        }
+        ,close:function(){
+            dispatch({type:"close"});
         }
     }
 }

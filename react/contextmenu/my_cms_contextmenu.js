@@ -15,8 +15,7 @@ class contextmenu extends React.Component{
 
     }
     menuClick(){
-
-        this.props.menuClick('none',0,0);
+        this.props.menuClick({display:'none',left:0,top:0,isFile:this.props.menuDisplayInfo.isFile,path:this.props.menuDisplayInfo.path});
     }
     render(){
 
@@ -25,7 +24,6 @@ class contextmenu extends React.Component{
             <div className="contextmenu" style={style}>
                <ul>
                   <li onClick={menuClick.bind(this)}>查看</li>
-                  <li  onClick={menuClick.bind(this)}>删除</li>
                </ul>
             </div>
         )
@@ -33,16 +31,20 @@ class contextmenu extends React.Component{
 }
 
 const mapStateToProps =function (state) {
-    console.log(state.contextmenuCounter);
     return {
-      menuDisplayInfo:state.contextmenuCounter.disPlayInfo
+      menuDisplayInfo:state.contextmenuCounter.rightMenu
     }
 }
 
 const mapDispatchToProps = function(dispatch ,ownProps) {
     return {
-          menuClick:function(display,left,top){
-              dispatch({type:'showMenu',display:display,left:left,top:top});
+          menuClick:function(opt){
+              dispatch({type:'showMenu',display:opt.display,left:opt.left,top:opt.top});
+              if(opt.isFile==1||opt.isFile=="1"){
+                  dispatch(actions.dbFile(opt.path));
+              }else{
+                  dispatch({type:"showFolder",path:opt.path});
+              }
           }
     }
 }

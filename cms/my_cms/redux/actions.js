@@ -22,8 +22,44 @@ module.exports={
             });
         }
     },
+    containSome:function(str,arr){
+        return arr.some(function(ele){
+            return str.indexOf(ele) > -1
+        })
+    },
+    dbFile:function(filePath){
+        var containSome=this.containSome;
+        return function (dispatch){
+            $.ajax({
+                type: "get",
+                url: "http://10.0.130.129:3000/file/getFileContent",
+                data: {path:filePath},
+                dataType: "json",
+                success: function (data) {
+
+                    containSome(filePath,['css','js','ftl','ejs','html','txt','docx'])&&window.open("dbFile").document.write(data.filedata);
+                    containSome(filePath,['png','ico','jpg'])&&window.open(" /file/showPic?ph="+filePath);
+
+                    //opt.content=data.filedata;
+                    //dispatch({type:"dbFile",option:opt,filePath:filePath});
+                },
+                exception: function (data) {
+                    alert("error");
+                    console.log(data);
+                }
+            });
+        }
+    },
     getFileContent:function(path){
     return function (dispatch){
+        var exec=path.split('.');
+        exec=exec[exec.length-1];
+       var t= 'jpgicopng'.indexOf(exec)+1;
+        t&& window.editor&& window.editor.setValue('请在文件管理tab下双击查看！');
+        var tt='docx'.indexOf(exec)+1;
+        console.log(t,tt);
+        t||tt&& window.editor&& window.editor.setValue('暂不支持此类型文档！');
+        if(!(t||tt))
         $.ajax({
             type: "get",
             url: "http://10.0.130.129:3000/file/getFileContent",
@@ -32,7 +68,6 @@ module.exports={
             success: function (data) {
                 window.editor&& window.editor.setValue(data.filedata);
                 dispatch({type:"getFileContent",selectFile:path});
-
             },
             exception: function (data) {
                 alert("error");

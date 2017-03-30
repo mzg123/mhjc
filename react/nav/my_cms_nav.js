@@ -87,8 +87,10 @@ const mapDispatchToProps = function(dispatch ,ownProps) {
         changeMenu: function(ty,tag){
              dispatch({type:ty,tag:tag});
         }
-        ,clickItem:function(pathType){
+        ,clickItem:function(pathType,path){
             dispatch(actions.getFileInfo(pathType));
+
+            dispatch({type:"showFolder",path:path});
         }
 
     }
