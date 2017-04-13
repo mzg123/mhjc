@@ -22,6 +22,17 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'dist')));
 
+function getClientIp(req) {
+  return req.headers['x-forwarded-for'] ||
+      req.connection.remoteAddress ||
+      req.socket.remoteAddress ||
+      req.connection.socket.remoteAddress;
+};
+app.use(function(req, res, next){
+  console.log(getClientIp(req));
+  next();
+})
+
 app.use('/', routes);
 app.use('/users',users);
 app.use('/file',getFileTree );
